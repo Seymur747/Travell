@@ -965,3 +965,309 @@ header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .d
   font-size: 40px;
   margin-bottom: 5px;
 }
+
+.input-group {
+  width: 300px;
+}
+
+.color-org {
+  transition: all .2s ease;
+  color: red;
+}
+
+@keyframes pulse_animation {
+  0% {
+    transform: scale(1);
+  }
+  30% {
+    transform: scale(1.4);
+  }
+  40% {
+    transform: scale(1.8);
+  }
+  50% {
+    transform: scale(2.2);
+  }
+  60% {
+    transform: scale(2);
+  }
+  70% {
+    transform: scale(1.8);
+  }
+  80% {
+    transform: scale(1.4);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(10deg);
+  }
+  30% {
+    transform: rotate(20deg);
+  }
+  40% {
+    transform: rotate(30deg);
+  }
+  50% {
+    transform: scale(40deg);
+  }
+  60% {
+    transform: rotate(50deg);
+  }
+  70% {
+    transform: rotate(60deg);
+  }
+  80% {
+    transform: rotate(70deg);
+  }
+  100% {
+    transform: rotate(80deg);
+  }
+}
+.pulse:hover {
+  animation-name: pulse_animation;
+  animation-duration: 1000ms;
+  transform-origin: 70% 70%;
+  animation-timing-function: linear;
+}
+
+.lightBox {
+  height: 150px;
+  width: 200px;
+  overflow: hidden;
+  position: relative;
+  left: 40%;
+  top: 20%;
+  transition: all 2s ease;
+}
+.lightBox img {
+  height: 100%;
+  width: 100%;
+  transition: all 2.5s ease;
+}
+.lightBox img:hover {
+  transform: scale(1.5);
+  transition: all 3s ease;
+}
+.lightBox:hover .icon1 {
+  transform: translate(0px, -50px);
+  transition: all .3s ease;
+  opacity: 1;
+}
+
+.icon1 {
+  transition: all .3s ease;
+  position: relative;
+  left: 40%;
+  bottom: 35px;
+  color: red;
+  opacity: 0;
+}
+
+#map .contactHeading {
+  padding: 50px;
+}
+#map .contactHeading h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 5em;
+  color: #565656;
+  font-weight: 350;
+}
+#map .maps {
+  height: 400px;
+}
+
+#infoUs {
+  padding-top: 60px;
+  color: #565656;
+  margin-bottom: 50px;
+}
+#infoUs .leftSide {
+  color: #A07373;
+}
+#infoUs .leftSide p {
+  font-size: 14px;
+}
+#infoUs .leftSide .forms label {
+  line-height: 20px;
+  display: block;
+}
+#infoUs .leftSide .forms .btn-primary {
+  margin-top: 10px;
+}
+#infoUs .rightSide {
+  border-left: 1px solid  #D4D4D4;
+  padding-left: 30px;
+  color: #565656;
+}
+#infoUs .rightSide label {
+  display: block;
+  line-height: 20px;
+}
+#infoUs .rightSide a {
+  line-height: 30px;
+}
+
+#footer {
+  background: #262626;
+  padding: 50px;
+  padding-top: 50px;
+  color: white;
+}
+#footer a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  line-height: 22px;
+}
+#footer .footerA {
+  font-size: 25px;
+}
+#footer .footerA a {
+  font-size: 25px;
+}
+#footer .footerA small {
+  font-size: .5em;
+}
+#footer .logos {
+  height: auto;
+  width: 150px;
+  margin-bottom: 30px;
+}
+#footer .logos img {
+  height: 100%;
+  width: 100%;
+}
+#footer .linkss ul {
+  padding-left: 0px;
+}
+#footer .linkss ul li {
+  list-style: none;
+}
+#footer .linkss ul li a {
+  font-size: .7em;
+}
+#footer small {
+  font-size: .73em;
+}
+#footer .logolarXirdaYumru {
+  margin-top: 20px;
+  padding: 19px;
+  padding-left: 0px;
+}
+#footer .logolarXirdaYumru ul {
+  padding: 0px;
+}
+#footer .logolarXirdaYumru ul li {
+  display: inline-block;
+  list-style-type: none;
+  margin-right: 10px;
+}
+#footer .logolarXirdaYumru ul li a {
+  height: 30px;
+  width: 30px;
+  background: #0EBCF2;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 100%;
+  text-decoration: none;
+  color: white;
+}
+#footer h4 {
+  font-size: 23px;
+  font-weight: 300;
+  padding-bottom: 5px;
+}
+#footer .NewsletterInput {
+  background: black;
+  margin-bottom: 10px;
+  display: block;
+}
+#footer .btn-primary {
+  margin-top: 10px;
+}
+#footer h3 {
+  font-weight: 300;
+  color: #1AAEF2;
+}
+
+@media (min-width: 360px) and (max-width: 411px) {
+  #map .contactHeading h1 {
+    font-size: 2.6em;
+  }
+}
+@media (min-width: 412px) and (max-width: 576px) {
+  #map .contactHeading h1 {
+    font-size: 3em;
+  }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  #map .contactHeading h1 {
+    font-size: 4em;
+  }
+}
+@media (min-width: 992px) and (max-width: 1350px) {
+  #map .contactHeading h1 {
+    font-size: 6em;
+  }
+}
+
+@media (min-width: 360px) and (max-width: 576px) {
+  #footer .f1 {
+    font-size: .66em;
+  }
+  #footer .linkss {
+    margin-top: 20px;
+  }
+  #footer .footerA h3, #footer .footerA a {
+    font-size: 22px;
+  }
+  #footer .small2 {
+    font-size: .4em;
+  }
+  #footer .logolarXirdaYumru ul li {
+    width: 26px;
+  }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  #footer .footerA h3, #footer .footerA a {
+    font-size: 15px;
+  }
+  #footer .footerA .small2 {
+    font-size: .36em;
+  }
+  #footer .logolarXirdaYumru ul li {
+    margin-right: 5px;
+    width: 15px;
+  }
+  #footer .logolarXirdaYumru ul li a {
+    width: 20px;
+    font-size: 13px;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  #footer .footerA h3, #footer .footerA a {
+    font-size: 15px;
+  }
+  #footer .footerA .small2 {
+    font-size: .5em;
+  }
+
+  .logolarXirdaYumru ul li {
+    margin-right: 1px !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  #footer .logolarXirdaYumru ul li {
+    margin-right: 2px !important;
+  }
+  #footer .footerA h3, #footer .footerA a {
+    font-size: 20px;
+  }
+  #footer .footerA .small2 {
+    font-size: .5em;
+  }
+}

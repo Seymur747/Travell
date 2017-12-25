@@ -145,3 +145,21 @@ $(window).resize(function(){
        
 })
 // Close DropDown When Rezing
+$("#inlineFormInputGroup").click(function(){
+    $(".input-group-addon").addClass("color-org");
+
+});
+
+
+
+
+$(".icon1").click(function(){
+$(".lightBox").css({"transform": "scale(3,3)", "transform": "rotateY(20deg)"});
+
+
+
+
+
+$(this).css("display","none")
+
+});
