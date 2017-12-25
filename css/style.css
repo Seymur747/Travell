@@ -1079,6 +1079,9 @@ header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .d
 #map .maps {
   height: 400px;
 }
+#map .noPadding {
+  padding: 0px;
+}
 
 #infoUs {
   padding-top: 60px;
@@ -1270,4 +1273,138 @@ header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .d
   #footer .footerA .small2 {
     font-size: .5em;
   }
+}
+.noPadding {
+  height: 100vh;
+  width: 100%;
+  background-image: url("../img/196_365_1300x900.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.SLiderItems {
+  color: white;
+  z-index: 3;
+}
+.SLiderItems .SliderCity {
+  border-top: 2px solid #858589;
+  border-bottom: 2px solid #858589;
+}
+.SLiderItems .SliderCity h1 {
+  font-size: 10em;
+  font-weight: 300;
+}
+.SLiderItems .SliderWeather span {
+  text-align: center;
+  font-size: 2em;
+  margin-right: 10px;
+}
+.SLiderItems .SliderWeather i {
+  font-size: 3em;
+}
+.SLiderItems .SliderPrice h6 {
+  margin-top: 10px;
+  font-size: 1.5em;
+  text-align: center;
+  font-weight: 400;
+}
+.SLiderItems .SliderPrice h3 {
+  font-weight: 300;
+  text-align: center;
+  font-size: 3em;
+  color: #26C3F3;
+}
+.SLiderItems .SliderPrice a {
+  text-decoration: none;
+  margin-left: 39%;
+  border: 2px solid gray;
+}
+
+.Layout {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  opacity: 0.7;
+  z-index: 2;
+  background: black;
+}
+
+.Chevrons {
+  display: flex;
+  align-items: center;
+}
+.Chevrons i {
+  position: absolute;
+  z-index: 5;
+  padding: 20px;
+  background: green;
+  border-radius: 100%;
+}
+.Chevrons i:last-child {
+  color: yellow;
+  right: 30px;
+}
+.Chevrons i:first-child {
+  color: blue;
+  left: 30px;
+}
+
+@media (max-width: 360px) {
+  #Slider .SliderCity h1 {
+    font-size: 60px;
+  }
+  #Slider .SliderPrice a {
+    margin-left: 20%;
+  }
+}
+#tabs {
+  position: relative;
+  bottom: 45px;
+  z-index: 6;
+}
+
+#Paralax {
+  background-image: url("../img/Netherlands_Houses_491444.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  padding: 60px;
+  background-attachment: fixed;
+}
+#Paralax .ParalaxItem .tac {
+  text-align: center;
+}
+#Paralax .ParalaxItem h2 {
+  font-size: 40px;
+  font-weight: 270;
+  text-align: center;
+}
+#Paralax .ParalaxItem h1 {
+  font-size: 50px;
+  margin-top: 25px;
+  font-weight: 300;
+}
+#Paralax .ParalaxItem span {
+  display: block;
+  text-align: center;
+  font-size: 16px;
+}
+#Paralax .ParalaxItem small {
+  display: block;
+  text-align: center;
+  font-size: 13px;
+  margin-top: 15px;
+}
+#Paralax .ParalaxItem a {
+  text-decoration: none;
+  color: white;
+  margin-top: 20px;
+  border: 2px solid white;
+}
+
+.noPadding {
+  padding: 0px;
 }
