@@ -1079,7 +1079,7 @@ header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .d
 #map .maps {
   height: 400px;
 }
-#map .noPadding {
+#map .col-md-12:nth-child(2) {
   padding: 0px;
 }
 
@@ -1403,8 +1403,4 @@ header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .d
   color: white;
   margin-top: 20px;
   border: 2px solid white;
-}
-
-.noPadding {
-  padding: 0px;
 }
