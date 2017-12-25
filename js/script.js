@@ -163,3 +163,6 @@ $(".lightBox").css({"transform": "scale(3,3)", "transform": "rotateY(20deg)"});
 $(this).css("display","none")
 
 });
+
+
+
