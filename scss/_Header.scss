@@ -174,14 +174,14 @@ header{
 								
 							
 						}
-						.collapse{
+						.collapse,.collapsing{
 							.navbar-nav{
 
 								.nav-item.active{
 									.nav-link{
 										background:#ed8323; 
 										color:#fff !important;
-										 padding:1px 12px;
+										 padding:0px 12px;
 											i{
 												color:#fff !important;
 											}
@@ -194,30 +194,21 @@ header{
 										&:hover .nav-link{
 											 		background: #ed8323;
 											 		color:#fff !important;
-											 	@media (min-width: 992px)  and (max-width: 1200px){
-													padding:1px 12px;
-													
-										    	}
-										    	//Extra Large devices (large desktops , 1200px and up)
-										    	@media (min-width: 1200px){
-													padding:1px 12px;
-
-										    	}
+											 		
 											 	}
 
 										   
 										 
 									.nav-link{
 										    font-weight:500;
-										    padding:0px 12px;
-										    font-size: 15px;
-										    text-transform: uppercase;
-										    font-family: 'Roboto', arial, helvetica, sans-serif;
-										    color: #737373;
-										    background: #fff;
-										    transition: background-color 0.17s ease-out;
-										    position: relative;
-										    z-index: 2;
+										   
+										  		//Extra Small devices (landscape phones , 576px and up)
+										    	@media (max-width: 576px){
+										    		padding:0px 12px;
+
+
+										    	}	
+										    	//Small devices (landscape phones , 576px and up)
 										    	@media (min-width: 576px)  and (max-width: 768px){
 										    		padding:0px 12px;
 
@@ -229,14 +220,23 @@ header{
 										    	}
 										    	//Large devices (desktops  , 992px and up)
 										    	@media (min-width: 992px)  and (max-width: 1200px){
-													
+													padding:2px 12px;
 													
 										    	}
 										    	//Extra Large devices (large desktops , 1200px and up)
 										    	@media (min-width: 1200px){
-													
+													padding:2px 12px;
 
 										    	}
+										    font-size: 15px;
+										    text-transform: uppercase;
+										    font-family: 'Roboto', arial, helvetica, sans-serif;
+										    color: #737373;
+										    background: #fff;
+										    transition: background-color 0.17s ease-out;
+										    position: relative;
+										    z-index: 2;
+										    	
 										    strong{
 										    	position: relative;
 										    	left:10px;
@@ -281,14 +281,14 @@ header{
 									}
 
 									.dropDrownItems{
-										  visibility: hidden; /* hides sub-menu */
-  										  opacity: 0;
+										
+  										  display: none;
 										  position: absolute;
+										  z-index: 5;
+										  
+										  
 										 
 										  
-										  transform: translateY(-2em);
-										  z-index: -1;
-										  transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0s;
 										  	//Extra Small devices (landscape phones , 576px and up)
 										    	@media (max-width: 576px){
 										    		margin-left:50px;
@@ -313,7 +313,7 @@ header{
 
 											a{
 
-												padding:0px 13px;
+												padding:0px 12px;
 												
 												text-decoration:none;
 											
@@ -412,28 +412,7 @@ header{
 										}
 									}
 
-									//Large devices (desktops  , 992px and up)
-    								@media (min-width: 992px)  and (max-width: 1200px){
-										&:hover .dropDrownItems{
-										 visibility: visible; /* shows sub-menu */
-										 opacity: 1;
-										 z-index: 1;
-										 transform: translateY(0px);
-										 transition-delay: 0s, 0s, 0.3s;
-									}
-										
-    								}
-    								//Extra Large devices (large desktops , 1200px and up)
-    								@media (min-width: 1200px){
-										&:hover .dropDrownItems{
-										 visibility: visible; /* shows sub-menu */
-										 opacity: 1;
-										 z-index: 1;
-										 transform: translateY(0px);
-										 transition-delay: 0s, 0s, 0.3s;
-									}
-								
-    								}
+									
 									
 								
 

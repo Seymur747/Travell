@@ -366,36 +366,25 @@ header .NavBar .container .row .col-lg-12 nav .Burger button:focus {
   box-shadow: none !important;
   border: 1px solid  #4D4D4D !important;
 }
-header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item.active .nav-link {
+header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item.active .nav-link, header .NavBar .container .row .col-lg-12 nav .collapsing .navbar-nav .nav-item.active .nav-link {
   background: #ed8323;
   color: #fff !important;
-  padding: 1px 12px;
+  padding: 0px 12px;
 }
-header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item.active .nav-link i {
+header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item.active .nav-link i, header .NavBar .container .row .col-lg-12 nav .collapsing .navbar-nav .nav-item.active .nav-link i {
   color: #fff !important;
 }
-header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item {
+header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item, header .NavBar .container .row .col-lg-12 nav .collapsing .navbar-nav .nav-item {
   line-height: 48px;
   margin-right: 3px;
   transition: all 0.3s ease-in-out 0s;
 }
-header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item:hover .nav-link {
+header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item:hover .nav-link, header .NavBar .container .row .col-lg-12 nav .collapsing .navbar-nav .nav-item:hover .nav-link {
   background: #ed8323;
   color: #fff !important;
 }
-@media (min-width: 992px) and (max-width: 1200px) {
-  header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item:hover .nav-link {
-    padding: 1px 12px;
-  }
-}
-@media (min-width: 1200px) {
-  header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item:hover .nav-link {
-    padding: 1px 12px;
-  }
-}
-header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .nav-link {
+header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .nav-link, header .NavBar .container .row .col-lg-12 nav .collapsing .navbar-nav .nav-item .nav-link {
   font-weight: 500;
-  padding: 0px 12px;
   font-size: 15px;
   text-transform: uppercase;
   font-family: 'Roboto', arial, helvetica, sans-serif;
@@ -405,111 +394,122 @@ header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .n
   position: relative;
   z-index: 2;
 }
+@media (max-width: 576px) {
+  header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .nav-link, header .NavBar .container .row .col-lg-12 nav .collapsing .navbar-nav .nav-item .nav-link {
+    padding: 0px 12px;
+  }
+}
 @media (min-width: 576px) and (max-width: 768px) {
-  header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .nav-link {
+  header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .nav-link, header .NavBar .container .row .col-lg-12 nav .collapsing .navbar-nav .nav-item .nav-link {
     padding: 0px 12px;
   }
 }
 @media (min-width: 768px) and (max-width: 992px) {
-  header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .nav-link {
+  header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .nav-link, header .NavBar .container .row .col-lg-12 nav .collapsing .navbar-nav .nav-item .nav-link {
     padding: 0px 12px;
   }
 }
-header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .nav-link strong {
+@media (min-width: 992px) and (max-width: 1200px) {
+  header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .nav-link, header .NavBar .container .row .col-lg-12 nav .collapsing .navbar-nav .nav-item .nav-link {
+    padding: 2px 12px;
+  }
+}
+@media (min-width: 1200px) {
+  header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .nav-link, header .NavBar .container .row .col-lg-12 nav .collapsing .navbar-nav .nav-item .nav-link {
+    padding: 2px 12px;
+  }
+}
+header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .nav-link strong, header .NavBar .container .row .col-lg-12 nav .collapsing .navbar-nav .nav-item .nav-link strong {
   position: relative;
   left: 10px;
 }
-header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .nav-link i {
+header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .nav-link i, header .NavBar .container .row .col-lg-12 nav .collapsing .navbar-nav .nav-item .nav-link i {
   font-size: 1.4em;
   padding: 14px 20px;
   margin-right: -15px;
 }
 @media (max-width: 576px) {
-  header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .nav-link i {
+  header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .nav-link i, header .NavBar .container .row .col-lg-12 nav .collapsing .navbar-nav .nav-item .nav-link i {
     background: #cc6a11;
     color: #fff;
     float: right;
   }
 }
 @media (min-width: 576px) and (max-width: 768px) {
-  header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .nav-link i {
+  header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .nav-link i, header .NavBar .container .row .col-lg-12 nav .collapsing .navbar-nav .nav-item .nav-link i {
     background: #cc6a11;
     color: #fff;
   }
 }
 @media (min-width: 768px) and (max-width: 992px) {
-  header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .nav-link i {
+  header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .nav-link i, header .NavBar .container .row .col-lg-12 nav .collapsing .navbar-nav .nav-item .nav-link i {
     background: #cc6a11;
     color: #fff;
   }
 }
-header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .dropDrownItems {
-  visibility: hidden;
-  /* hides sub-menu */
-  opacity: 0;
+header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .dropDrownItems, header .NavBar .container .row .col-lg-12 nav .collapsing .navbar-nav .nav-item .dropDrownItems {
+  display: none;
   position: absolute;
-  transform: translateY(-2em);
-  z-index: -1;
-  transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0s;
+  z-index: 5;
 }
 @media (max-width: 576px) {
-  header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .dropDrownItems {
+  header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .dropDrownItems, header .NavBar .container .row .col-lg-12 nav .collapsing .navbar-nav .nav-item .dropDrownItems {
     margin-left: 50px;
   }
 }
 @media (min-width: 576px) and (max-width: 768px) {
-  header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .dropDrownItems {
+  header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .dropDrownItems, header .NavBar .container .row .col-lg-12 nav .collapsing .navbar-nav .nav-item .dropDrownItems {
     margin-left: 50px;
   }
 }
 @media (min-width: 768px) and (max-width: 992px) {
-  header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .dropDrownItems {
+  header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .dropDrownItems, header .NavBar .container .row .col-lg-12 nav .collapsing .navbar-nav .nav-item .dropDrownItems {
     margin-left: 50px;
   }
 }
-header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .dropDrownItems li {
+header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .dropDrownItems li, header .NavBar .container .row .col-lg-12 nav .collapsing .navbar-nav .nav-item .dropDrownItems li {
   list-style-type: none;
   line-height: 47px;
   width: 170px;
 }
-header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .dropDrownItems li a {
-  padding: 0px 13px;
+header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .dropDrownItems li a, header .NavBar .container .row .col-lg-12 nav .collapsing .navbar-nav .nav-item .dropDrownItems li a {
+  padding: 0px 12px;
   text-decoration: none;
   font-weight: 500;
   display: block;
   transition: background-color 0.17s ease-out;
 }
 @media (max-width: 576px) {
-  header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .dropDrownItems li a {
+  header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .dropDrownItems li a, header .NavBar .container .row .col-lg-12 nav .collapsing .navbar-nav .nav-item .dropDrownItems li a {
     background: #fff;
     color: #ed8323;
   }
 }
 @media (min-width: 576px) and (max-width: 768px) {
-  header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .dropDrownItems li a {
+  header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .dropDrownItems li a, header .NavBar .container .row .col-lg-12 nav .collapsing .navbar-nav .nav-item .dropDrownItems li a {
     background: #fff;
     color: #ed8323;
   }
 }
 @media (min-width: 768px) and (max-width: 992px) {
-  header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .dropDrownItems li a {
+  header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .dropDrownItems li a, header .NavBar .container .row .col-lg-12 nav .collapsing .navbar-nav .nav-item .dropDrownItems li a {
     background: #fff;
     color: #ed8323;
   }
 }
 @media (min-width: 992px) and (max-width: 1200px) {
-  header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .dropDrownItems li a {
+  header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .dropDrownItems li a, header .NavBar .container .row .col-lg-12 nav .collapsing .navbar-nav .nav-item .dropDrownItems li a {
     background: #333333;
     color: #fff;
   }
 }
 @media (min-width: 1200px) {
-  header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .dropDrownItems li a {
+  header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .dropDrownItems li a, header .NavBar .container .row .col-lg-12 nav .collapsing .navbar-nav .nav-item .dropDrownItems li a {
     background: #333333;
     color: #fff;
   }
 }
-header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .dropDrownItems li a span {
+header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .dropDrownItems li a span, header .NavBar .container .row .col-lg-12 nav .collapsing .navbar-nav .nav-item .dropDrownItems li a span {
   line-height: 46px;
   float: right;
   color: white;
@@ -518,71 +518,51 @@ header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .d
   transition: background-color 0.17s ease-out;
 }
 @media (max-width: 576px) {
-  header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .dropDrownItems li a span {
+  header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .dropDrownItems li a span, header .NavBar .container .row .col-lg-12 nav .collapsing .navbar-nav .nav-item .dropDrownItems li a span {
     color: #ed8323;
   }
 }
 @media (min-width: 576px) and (max-width: 768px) {
-  header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .dropDrownItems li a span {
+  header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .dropDrownItems li a span, header .NavBar .container .row .col-lg-12 nav .collapsing .navbar-nav .nav-item .dropDrownItems li a span {
     color: #ed8323;
   }
 }
 @media (min-width: 768px) and (max-width: 992px) {
-  header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .dropDrownItems li a span {
+  header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .dropDrownItems li a span, header .NavBar .container .row .col-lg-12 nav .collapsing .navbar-nav .nav-item .dropDrownItems li a span {
     color: #ed8323;
   }
 }
-header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .dropDrownItems li a:hover {
+header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .dropDrownItems li a:hover, header .NavBar .container .row .col-lg-12 nav .collapsing .navbar-nav .nav-item .dropDrownItems li a:hover {
   background: #ed8323;
 }
 @media (max-width: 576px) {
-  header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .dropDrownItems li a:hover {
+  header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .dropDrownItems li a:hover, header .NavBar .container .row .col-lg-12 nav .collapsing .navbar-nav .nav-item .dropDrownItems li a:hover {
     color: #fff;
   }
 }
 @media (min-width: 576px) and (max-width: 768px) {
-  header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .dropDrownItems li a:hover {
+  header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .dropDrownItems li a:hover, header .NavBar .container .row .col-lg-12 nav .collapsing .navbar-nav .nav-item .dropDrownItems li a:hover {
     color: #fff;
   }
 }
 @media (min-width: 768px) and (max-width: 992px) {
-  header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .dropDrownItems li a:hover {
+  header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .dropDrownItems li a:hover, header .NavBar .container .row .col-lg-12 nav .collapsing .navbar-nav .nav-item .dropDrownItems li a:hover {
     color: #fff;
   }
 }
 @media (max-width: 576px) {
-  header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .dropDrownItems li a:hover span {
+  header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .dropDrownItems li a:hover span, header .NavBar .container .row .col-lg-12 nav .collapsing .navbar-nav .nav-item .dropDrownItems li a:hover span {
     color: #fff;
   }
 }
 @media (min-width: 576px) and (max-width: 768px) {
-  header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .dropDrownItems li a:hover span {
+  header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .dropDrownItems li a:hover span, header .NavBar .container .row .col-lg-12 nav .collapsing .navbar-nav .nav-item .dropDrownItems li a:hover span {
     color: #fff;
   }
 }
 @media (min-width: 768px) and (max-width: 992px) {
-  header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .dropDrownItems li a:hover span {
+  header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .dropDrownItems li a:hover span, header .NavBar .container .row .col-lg-12 nav .collapsing .navbar-nav .nav-item .dropDrownItems li a:hover span {
     color: #fff;
-  }
-}
-@media (min-width: 992px) and (max-width: 1200px) {
-  header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item:hover .dropDrownItems {
-    visibility: visible;
-    /* shows sub-menu */
-    opacity: 1;
-    z-index: 1;
-    transform: translateY(0px);
-    transition-delay: 0s, 0s, 0.3s;
-  }
-}
-@media (min-width: 1200px) {
-  header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item:hover .dropDrownItems {
-    visibility: visible;
-    /* shows sub-menu */
-    opacity: 1;
-    z-index: 1;
-    transform: translateY(0px);
-    transition-delay: 0s, 0s, 0.3s;
   }
 }
 

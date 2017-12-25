@@ -73,57 +73,78 @@ $(document).ready(function(){
     });
 });
 //Flags Drop END
+//DropDown
 
+$(document).ready(function(){
+{
+     $("header .NavBar .container .row .col-lg-12 .collapse .navbar-nav .nav-item .nav-link").hover(function(){
+        if($(window).width()>=992){
+            $(this).next().addClass("Drop")
+            $("header .NavBar .container .row .col-lg-12 .collapse .navbar-nav .nav-item .Drop").slideDown("fast")
+        }
+        
+             
+        
+       
+    });
+      $("header .NavBar .container .row .col-lg-12 .collapse .navbar-nav .nav-item .nav-link").mouseleave(function(){
+          if($(window).width()>=992){
+            $("header .NavBar .container .row .col-lg-12 .collapse .navbar-nav .nav-item .Drop").slideUp("fast")
+            $(this).next().removeClass('Drop')
+         }
+        
+
+    });
+}
+   
+});
+
+
+
+
+
+//DropDown END
 //DropDownClick
 var TextOfParent
 $("header .NavBar .container .row .col-lg-12 .collapse .navbar-nav .nav-item .nav-link i").click(function(event) {
     if($(this).parent().width()>200){
         var HeightofDrop = $(this).parent().next().height()
         var WidthofParent = $(this).parent().width()
-        console.log(TextOfParent)
+        
+      
         if(TextOfParent == null){
           
              TextOfParent = $(this).parent().text()
-
+              $(this).parent().next().addClass("Drop")
               $("header .NavBar .container .row .col-lg-12 .collapse .navbar-nav .nav-item").css({"margin-top": "0px"})
-                 $("header .NavBar .container .row .col-lg-12 .collapse .navbar-nav .nav-item .dropDrownItems")
-                 .css({"visibility": "hidden" ,
-                    "opacity": "0" ,
-                    "z-index": "-1" ,
-                    "transform": "translateY(-2em)"})
+                  $("header .NavBar .container .row .col-lg-12 .collapse .navbar-nav .nav-item .dropDrownItems").slideUp("fast")
+                  
                 $(this).parent().parent().next().css({"margin-top": HeightofDrop+"px"})
-                $(this).parent().next().css({"visibility": "visible" ,
-                 "opacity": "1",
-                  "z-index": "1",
-                   "transform": "translateY(0px)",
-                   "transition-delay": "0s, 0s, 0.3s"})
+                
+                 $("header .NavBar .container .row .col-lg-12 .collapse .navbar-nav .nav-item .Drop").slideDown("fast")
+                 $("header .NavBar .container .row .col-lg-12 .collapse .navbar-nav .nav-item .dropDrownItems").removeClass('Drop')
                 $(this).parent().next().children().width(WidthofParent-80)
         }else{
            
             if(TextOfParent == $(this).parent().text()){
-                console.log("2")
+             
                 TextOfParent = null
+               
                  $("header .NavBar .container .row .col-lg-12 .collapse .navbar-nav .nav-item").css({"margin-top": "0px"})
-                 $("header .NavBar .container .row .col-lg-12 .collapse .navbar-nav .nav-item .dropDrownItems")
-                 .css({"visibility": "hidden" ,
-                    "opacity": "0" ,
-                    "z-index": "-1" ,
-                    "transform": "translateY(-2em)"})
+                 $("header .NavBar .container .row .col-lg-12 .collapse .navbar-nav .nav-item .dropDrownItems").slideUp("fast")
+                 
+                 
             }else{
-                console.log($(this).parent().text())
+                $(this).parent().next().addClass("Drop")
+              
                 TextOfParent = $(this).parent().text()
+               
                  $("header .NavBar .container .row .col-lg-12 .collapse .navbar-nav .nav-item").css({"margin-top": "0px"})
-                 $("header .NavBar .container .row .col-lg-12 .collapse .navbar-nav .nav-item .dropDrownItems")
-                 .css({"visibility": "hidden" ,
-                    "opacity": "0" ,
-                    "z-index": "-1" ,
-                    "transform": "translateY(-2em)"})
-                $(this).parent().parent().next().css({"margin-top": HeightofDrop+"px"})
-                $(this).parent().next().css({"visibility": "visible" ,
-                 "opacity": "1",
-                  "z-index": "1",
-                   "transform": "translateY(0px)",
-                   "transition-delay": "0s, 0s, 0.3s"})
+                 $("header .NavBar .container .row .col-lg-12 .collapse .navbar-nav .nav-item .dropDrownItems").slideUp("fast")
+                  
+                 $(this).parent().parent().next().css({"margin-top": HeightofDrop+"px"})
+                 $("header .NavBar .container .row .col-lg-12 .collapse .navbar-nav .nav-item .Drop").slideDown("fast")
+                 $("header .NavBar .container .row .col-lg-12 .collapse .navbar-nav .nav-item .dropDrownItems").removeClass('Drop')
                 $(this).parent().next().children().width(WidthofParent-80)
             }
         }
@@ -132,15 +153,15 @@ $("header .NavBar .container .row .col-lg-12 .collapse .navbar-nav .nav-item .na
 })
 //DropDownClick END
 // Close DropDown When Rezing
- var LastSize
+//  var LastSize
 $(window).resize(function(){
        TextOfParent = null
-       $("header .NavBar .container .row .col-lg-12 .collapse .navbar-nav .nav-item").css({"margin-top": "0px"})
-       $("header .NavBar .container .row .col-lg-12 .collapse .navbar-nav .nav-item .dropDrownItems")
-       .css({"visibility": "hidden" ,
-            "opacity": "0" ,
-            "z-index": "-1" ,
-            "transform": "translateY(-2em)"})     
+                 $("header .NavBar .container .row .col-lg-12 .collapse").removeClass('show')
+                 $("header .NavBar .container .row .col-lg-12 .collapse .navbar-nav .nav-item").css({"margin-top": "0px"})
+                 $("header .NavBar .container .row .col-lg-12 .collapse .navbar-nav .nav-item .dropDrownItems").slideUp("fast")
+                 $("header .NavBar .container .row .col-lg-12 .collapse .navbar-nav .nav-item .dropDrownItems li").width(170)
+       
+           
    
        
 })
