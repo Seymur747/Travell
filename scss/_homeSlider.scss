@@ -1,0 +1,106 @@
+.noPadding{
+
+	height: 100vh;
+	width: 100%;
+	background-image: url("../img/196_365_1300x900.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	position: relative;
+}
+.SLiderItems{
+color: white;
+z-index: 3;
+	.SliderCity{
+		border-top: 2px solid #858589;
+		border-bottom: 2px solid #858589;
+		h1{
+			    font-size: 10em;
+   				 font-weight: 300;
+
+		}
+
+	}
+	.SliderWeather{
+
+		span{
+			text-align: center;
+			font-size: 2em;
+			margin-right: 10px;
+		}
+		i{
+			font-size: 3em;
+		}
+	}
+	.SliderPrice{
+		
+		h6{
+			margin-top: 10px;
+			font-size: 1.5em;
+			text-align: center;
+			font-weight: 400;
+		}
+		h3{
+			    font-weight: 300;
+			    text-align: center;
+			    font-size: 3em;
+			    color: #26C3F3;
+		}
+		a{
+			text-decoration: none;
+			margin-left : 39% ;
+			border: 2px solid gray;
+		}
+
+	}
+}
+
+.Layout{
+	height: 100%;
+	width: 100%;
+position: absolute;
+opacity:0.7;
+z-index: 2;
+background: black;
+
+}
+.Chevrons{
+	  display: flex;
+    align-items: center;
+		i{
+			
+			position: absolute; 
+			z-index: 5;
+			padding: 20px;
+			background: green;
+			border-radius: 100%;
+
+			&:last-child{
+
+				color:yellow;
+				right: 30px;
+			}
+				&:first-child{
+
+				color:blue; 
+				left: 30px;
+			}
+		}
+
+	}
+
+	  	@media (max-width: 360px){
+			
+			#Slider{
+				.SliderCity{
+					h1{
+						font-size: 60px;
+					}
+				}
+				.SliderPrice{
+					a{
+						margin-left: 20%;
+					}
+				}
+			}
+    	}
