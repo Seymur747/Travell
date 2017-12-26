@@ -1603,6 +1603,7 @@ header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .d
 #ActivitiesDetails .container .row .Gallary .tab-content .Photos .container-fluid .row .col-lg-3 {
   overflow: hidden;
   position: relative;
+  box-sizing: border-box;
   z-index: 1;
 }
 #ActivitiesDetails .container .row .Gallary .tab-content .Photos .container-fluid .row .col-lg-3 i {
@@ -1631,4 +1632,30 @@ header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .d
 #ActivitiesDetails .container .row .Gallary .tab-content .Photos .container-fluid .row .col-lg-3:hover img {
   transform: scale(1.2);
   opacity: .7;
+}
+#ActivitiesDetails .container .row .Description h3 {
+  font-size: 30.758000000000003px;
+  font-weight: 300;
+  color: #565656;
+  line-height: 1.3em;
+  margin-top: 33px;
+}
+#ActivitiesDetails .container .row .Description p {
+  color: #737373;
+  font-family: 'Open Sans', Tahoma, Arial, helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 1.6em;
+  font-weight: 400;
+}
+#ActivitiesDetails .container .row .Description a {
+  transition: 0.2s;
+  font-size: 18px;
+  line-height: 1.33;
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 10px 16px;
+  display: inline-block;
+}
+#ActivitiesDetails .container .row .Description a:hover {
+  border-radius: 10px;
 }
