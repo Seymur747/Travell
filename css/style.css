@@ -1535,3 +1535,6 @@ header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .d
     font-size: 72%;
   }
 }
+blockquote {
+  color: red;
+}
