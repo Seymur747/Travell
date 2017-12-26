@@ -73,8 +73,9 @@ margin-bottom: 50px;
 }
 #footer{	
 	background: #262626;
-	padding: 50px;
-	padding-top: 50px;
+
+	padding-top: 60px;
+	padding-bottom: 20px;
 		color: white;
 
 	a{
@@ -82,6 +83,10 @@ margin-bottom: 50px;
 				color:white;
 				display: block;
 				line-height: 22px;
+	}
+	.borderC:hover{
+
+		border-radius: 15px;
 	}
 	.footerA
 	{
@@ -91,9 +96,10 @@ margin-bottom: 50px;
 		a{
 
 			font-size: 25px;
+			font-weight: 300;
 		}
 		small{
-			font-size: .5em;
+			font-size: .45em;
 		}
 	}
 
@@ -127,7 +133,7 @@ margin-bottom: 50px;
 		font-size: .73em;
 	}
 	.logolarXirdaYumru{
-		margin-top: 20px;
+	
 		padding: 19px;
 		padding-left: 0px;
 		ul{
@@ -135,6 +141,9 @@ margin-bottom: 50px;
 		padding: 0px;
 			li{
 					display: inline-block;
+					&:hover a{
+						animation :pulse_animation .5s;
+					}
 					
 				list-style-type: none;
 				margin-right: 10px;
@@ -147,7 +156,7 @@ margin-bottom: 50px;
 					border-radius: 100%;
 					text-decoration: none;
 					color: white;
-
+					
 				}
 			}
 

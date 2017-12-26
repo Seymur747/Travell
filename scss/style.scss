@@ -114,6 +114,23 @@ body{
 
     	}
 
+.pulse:hover {
+  animation-name: pulse_animation;
+  animation-duration: 1000ms;
+  transform-origin:70% 70%;
+  animation-timing-function: linear;
+}
+@keyframes pulse_animation {
+  0% { transform: scale(1); }
+  30% { transform: scale(1); }
+  40% { transform: scale(1); }
+  50% { transform: scale(1); }
+  60% { transform: scale(1); }
+  70% { transform: scale(1); }
+  80% { transform: scale(1); }
+  100% { transform: scale(1); }
+}
+
 
 @import "elements";
 @import "CommingSoon";

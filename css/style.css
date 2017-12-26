@@ -98,6 +98,42 @@ body {
     transform: rotateZ(360deg);
   }
 }
+.pulse:hover {
+  animation-name: pulse_animation;
+  animation-duration: 1000ms;
+  transform-origin: 70% 70%;
+  animation-timing-function: linear;
+}
+
+@keyframes pulse_animation {
+  0% {
+    transform: scale(1);
+  }
+  30% {
+    transform: scale(1);
+  }
+  40% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1);
+  }
+  60% {
+    transform: scale(1);
+  }
+  70% {
+    transform: scale(1);
+  }
+  80% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+#tabs .container .row .col-md-6 .nav-tabs {
+  border-bottom: 0px;
+}
 #tabs .container .row .col-md-6 .nav-tabs .nav-item .nav-link {
   background: rgba(0, 0, 0, 0.4);
   border: none !important;
@@ -979,23 +1015,38 @@ header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .d
   0% {
     transform: scale(1);
   }
+  5% {
+    transform: scale(1.1);
+  }
+  10% {
+    transform: scale(1.2);
+  }
+  20% {
+    transform: scale(1.3);
+  }
   30% {
     transform: scale(1.4);
   }
   40% {
-    transform: scale(1.8);
+    transform: scale(1.5);
   }
   50% {
-    transform: scale(2.2);
+    transform: scale(1.6);
   }
   60% {
-    transform: scale(2);
+    transform: scale(1.5);
   }
   70% {
-    transform: scale(1.8);
+    transform: scale(1.4);
   }
   80% {
-    transform: scale(1.4);
+    transform: scale(1.3);
+  }
+  90% {
+    transform: scale(1.2);
+  }
+  95% {
+    transform: scale(1.1);
   }
   100% {
     transform: scale(1);
@@ -1116,8 +1167,8 @@ header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .d
 
 #footer {
   background: #262626;
-  padding: 50px;
-  padding-top: 50px;
+  padding-top: 60px;
+  padding-bottom: 20px;
   color: white;
 }
 #footer a {
@@ -1126,14 +1177,18 @@ header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .d
   display: block;
   line-height: 22px;
 }
+#footer .borderC:hover {
+  border-radius: 15px;
+}
 #footer .footerA {
   font-size: 25px;
 }
 #footer .footerA a {
   font-size: 25px;
+  font-weight: 300;
 }
 #footer .footerA small {
-  font-size: .5em;
+  font-size: .45em;
 }
 #footer .logos {
   height: auto;
@@ -1157,7 +1212,6 @@ header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .d
   font-size: .73em;
 }
 #footer .logolarXirdaYumru {
-  margin-top: 20px;
   padding: 19px;
   padding-left: 0px;
 }
@@ -1168,6 +1222,9 @@ header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .d
   display: inline-block;
   list-style-type: none;
   margin-right: 10px;
+}
+#footer .logolarXirdaYumru ul li:hover a {
+  animation: pulse_animation .5s;
 }
 #footer .logolarXirdaYumru ul li a {
   height: 30px;
@@ -1284,6 +1341,10 @@ header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .d
   position: relative;
 }
 
+#Slider {
+  text-align: center;
+}
+
 .SLiderItems {
   color: white;
   z-index: 3;
@@ -1297,7 +1358,6 @@ header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .d
   font-weight: 300;
 }
 .SLiderItems .SliderWeather span {
-  text-align: center;
   font-size: 2em;
   margin-right: 10px;
 }
@@ -1307,18 +1367,15 @@ header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .d
 .SLiderItems .SliderPrice h6 {
   margin-top: 10px;
   font-size: 1.5em;
-  text-align: center;
   font-weight: 400;
 }
 .SLiderItems .SliderPrice h3 {
   font-weight: 300;
-  text-align: center;
   font-size: 3em;
   color: #26C3F3;
 }
 .SLiderItems .SliderPrice a {
   text-decoration: none;
-  margin-left: 39%;
   border: 2px solid gray;
 }
 
@@ -1351,7 +1408,7 @@ header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .d
   left: 30px;
 }
 
-@media (max-width: 360px) {
+@media (min-width: 360px) {
   #Slider .SliderCity h1 {
     font-size: 60px;
   }
@@ -1359,12 +1416,27 @@ header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .d
     margin-left: 20%;
   }
 }
+@media (min-width: 412px) {
+  #Slider .SliderCity h1 {
+    font-size: 4em;
+  }
+}
 #tabs {
   position: relative;
-  bottom: 45px;
+  bottom: 46px;
   z-index: 6;
 }
 
+@media (min-width: 360px) {
+  #tabs ul li span {
+    display: none;
+  }
+}
+@media (min-width: 412px) {
+  #tabs ul li span {
+    display: none;
+  }
+}
 #Paralax {
   background-image: url("../img/Netherlands_Houses_491444.jpg");
   background-repeat: no-repeat;
@@ -1379,18 +1451,19 @@ header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .d
 }
 #Paralax .ParalaxItem h2 {
   font-size: 40px;
-  font-weight: 270;
+  font-weight: 400;
   text-align: center;
 }
 #Paralax .ParalaxItem h1 {
   font-size: 50px;
   margin-top: 25px;
-  font-weight: 300;
+  font-weight: 400;
 }
 #Paralax .ParalaxItem span {
   display: block;
   text-align: center;
   font-size: 16px;
+  font-style: italic;
 }
 #Paralax .ParalaxItem small {
   display: block;
@@ -1403,4 +1476,62 @@ header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .d
   color: white;
   margin-top: 20px;
   border: 2px solid white;
+}
+
+@media (min-width: 360px) {
+  #Paralax .tac h2 {
+    font-size: 33px;
+  }
+  #Paralax .tac h1 {
+    font-size: 33px;
+  }
+}
+@media (min-width: 412px) {
+  #Paralax .tac h2 {
+    font-size: 29px;
+  }
+  #Paralax .tac h1 {
+    font-size: 38px;
+  }
+}
+@media (min-width: 375px) {
+  #Paralax .tac h2 {
+    font-size: 35px;
+  }
+  #Paralax .tac h1 {
+    font-size: 33px;
+  }
+}
+#Compliments {
+  padding: 50px 60px;
+}
+#Compliments .box {
+  color: #808080;
+  position: relative;
+}
+#Compliments .box span {
+  display: block;
+}
+#Compliments .iconContainer {
+  right: 20px;
+  position: absolute;
+  background: #808080;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  border-radius: 100%;
+}
+#Compliments .iconContainer i {
+  margin-top: 12px;
+  color: white;
+}
+
+@media (min-width: 360px) {
+  #Compliments .iconContainer {
+    right: 0px;
+  }
+
+  .box small {
+    font-size: 72%;
+  }
 }
