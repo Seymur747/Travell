@@ -1,5 +1,38 @@
 #tabs{
 	position: relative;
-	bottom: 45px;
+	bottom: 46px;
 	z-index: 6;
+}
+
+	  	@media (min-width: 360px){
+			
+	#tabs{
+
+		
+		ul{
+			li{
+				
+		
+				span{
+					display: none;
+				}
+			}
+		}
+	}
+}
+	  	@media (min-width: 412px){
+			
+	#tabs{
+
+		
+		ul{
+			li{
+				
+		
+				span{
+					display: none;
+				}
+			}
+		}
+	}
 }
