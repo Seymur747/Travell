@@ -1,0 +1,143 @@
+#ActivitiesDetails{
+	padding-bottom:50px;
+	.container{
+		.row{
+			.Path{
+				border-bottom:1px solid #f2f2f2;
+				margin-bottom:10px;
+				ul{
+					margin:15px 0px;
+					li{
+						list-style-type: none;
+						float:left;
+						
+						i{
+							color:#cccccc;
+							margin-left:7px;
+							margin-right:7px;
+						}
+						a{
+							text-decoration:none;
+							font-size: 13px;
+						}
+					}
+				}
+			}
+			.ShortInfo{
+				h2{
+					line-height: 1em;
+					font-size: 39.985400000000006px;
+					font-weight: 300;
+   					color: #565656;
+   					margin-bottom:10px;
+				}
+				p{
+					font-size: 12px;
+					line-height: 1em;
+					color:#737373;
+					margin-bottom:10px;
+					span{
+						color: #565656;
+					}
+				}
+				ul{
+					li{
+						list-style:none;
+						float:left;
+						a{
+							text-decoration:none;
+							font-size: 12px;
+    						line-height: 1.5em;
+    						margin-right:10px;
+							span{
+								margin-right:2px;
+							}
+							
+						}
+						&:last-child{
+								a{
+									span{
+										color: #565656;
+									}
+								}
+								
+							}
+					}
+				}
+			}
+			.Price{
+				margin-bottom:10px;
+				p{
+					text-align:right;
+
+					small{
+						color:#818181;
+						line-height: 1.4000000000000001em;
+					}
+					span{
+						font-size: 42px;
+  						line-height: 1em;
+  						color: #686868;
+					}
+				}
+			}
+			.Gallary{
+				.nav{
+					
+						.nav-item{
+							a{
+								font-size:13px;
+								padding: 10px 15px;
+								i{
+									margin-right:5px;
+									
+								}
+							}
+						}
+					
+				}
+				.tab-content{
+					.Photos{
+						.container-fluid{
+							.row{
+								.col-lg-3{
+									overflow:hidden;
+									position: relative;
+									z-index: 1;	
+										i{
+											height:30px;
+											width: 30px;
+											text-align:center;
+											line-height:30px;
+											border-radius:50%;
+											position: absolute;
+											top:70%;
+											left:40%;
+											opacity:0;
+											z-index: -1;
+											transition:all .4s ease;
+
+										}
+										img{
+											transform:scale(1);
+											opacity:1;
+											transition:all 4s ease;
+										}
+									&:hover i{
+										top:40%;
+										opacity:1;
+										z-index: 1;
+									}
+									&:hover img{
+										transform:scale(1.2);
+										opacity: .7;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

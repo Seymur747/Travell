@@ -7,64 +7,199 @@ body {
   color: #fff !important;
 }
 
+.color-Main-cl {
+  color: #ed8323;
+  transition: color .3s ease;
+}
+.color-Main-cl:hover {
+  color: #cc6a11;
+}
+
 .color-second {
   background: #0ebcf2;
+}
+
+.color-second-cl {
+  color: #0ebcf2;
+  transition: color .3s ease;
+}
+.color-second-cl:hover {
+  color: #0a97c3;
 }
 
 .color-three {
   background: #b66672;
 }
 
+.color-three-cl {
+  color: #b66672;
+  transition: color .3s ease;
+}
+.color-three-cl:hover {
+  color: #9e4b58;
+}
+
 .color-fourth {
   background: #b66672;
+}
+
+.color-fourth-cl {
+  color: #b66672;
+  transition: color .3s ease;
+}
+.color-fourth-cl:hover {
+  color: #9e4b58;
 }
 
 .color-five {
   background: #4F96B6;
 }
 
+.color-five-cl {
+  color: #4F96B6;
+  transition: color .3s ease;
+}
+.color-five-cl:hover {
+  color: #3e7994;
+}
+
 .color-six {
   background: #E45E66;
+}
+
+.color-six-cl {
+  color: #E45E66;
+  transition: color .3s ease;
+}
+.color-six-cl:hover {
+  color: #dd323c;
 }
 
 .color-seven {
   background: #96AA66;
 }
 
+.color-seven-cl {
+  color: #96AA66;
+  transition: color .3s ease;
+}
+.color-seven-cl:hover {
+  color: #7c8e4f;
+}
+
 .color-eight {
   background: #5B84AA;
+}
+
+.color-eight-cl {
+  color: #5B84AA;
+  transition: color .3s ease;
+}
+.color-eight-cl:hover {
+  color: #486a8a;
 }
 
 .color-nine {
   background: #CA2AC6;
 }
 
+.color-nine-cl {
+  color: #CA2AC6;
+  transition: color .3s ease;
+}
+.color-nine-cl:hover {
+  color: #a0219d;
+}
+
 .color-ten {
   background: #CF315A;
+}
+
+.color-ten-cl {
+  color: #CF315A;
+  transition: color .3s ease;
+}
+.color-ten-cl:hover {
+  color: #a62748;
 }
 
 .color-eleven {
   background: #74C683;
 }
 
+.color-eleven-cl {
+  color: #74C683;
+  transition: color .3s ease;
+}
+.color-eleven-cl:hover {
+  color: #50b763;
+}
+
 .color-twelve {
   background: #30BBB1;
+}
+
+.color-twelve-cl {
+  color: #30BBB1;
+  transition: color .3s ease;
+}
+.color-twelve-cl:hover {
+  color: #26928b;
 }
 
 .color-thirteen {
   background: #7646B8;
 }
 
+.color-thirteen-cl {
+  color: #7646B8;
+  transition: color .3s ease;
+}
+.color-thirteen-cl:hover {
+  color: #5e3893;
+}
+
 .color-fourteen {
   background: #966650;
+}
+
+.color-fourteen-cl {
+  color: #966650;
+  transition: color .3s ease;
+}
+.color-fourteen-cl:hover {
+  color: #754f3e;
 }
 
 .color-fifteen {
   background: #1A5AE4;
 }
 
+.color-fifteen-cl {
+  color: #1A5AE4;
+  transition: color .3s ease;
+}
+.color-fifteen-cl:hover {
+  color: #1548b6;
+}
+
 .color-sixteen {
   background: #FF1D13;
+}
+
+.color-sixteen-cl {
+  color: #FF1D13;
+  transition: color .3s ease;
+}
+.color-sixteen-cl:hover {
+  color: #df0900;
+}
+
+.LastLi {
+  color: #999999;
+}
+.LastLi i {
+  display: none;
 }
 
 .text-style {
@@ -274,6 +409,9 @@ header .headerTop .container .row .search .container-fluid .row .col-md-8 {
   margin: 10px 0px;
   margin-left: -15px;
 }
+header .headerTop .container .row .search .container-fluid .row .col-md-8 .input-group {
+  width: 100% !important;
+}
 header .headerTop .container .row .search .container-fluid .row .col-md-8 .input-group span {
   border-right: 0px;
   background: #262626;
@@ -390,7 +528,7 @@ header .NavBar .container .row .col-lg-12 nav .BurgerMenu {
   padding: 0px 10px;
 }
 header .NavBar .container .row .col-lg-12 nav .Burger {
-  background: #4D4D4D;
+  background: #262626;
   height: 50px;
 }
 header .NavBar .container .row .col-lg-12 nav .Burger button {
@@ -402,36 +540,25 @@ header .NavBar .container .row .col-lg-12 nav .Burger button:focus {
   box-shadow: none !important;
   border: 1px solid  #4D4D4D !important;
 }
-header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item.active .nav-link {
+header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item.active .nav-link, header .NavBar .container .row .col-lg-12 nav .collapsing .navbar-nav .nav-item.active .nav-link {
   background: #ed8323;
   color: #fff !important;
-  padding: 1px 12px;
+  padding: 0px 12px;
 }
-header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item.active .nav-link i {
+header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item.active .nav-link i, header .NavBar .container .row .col-lg-12 nav .collapsing .navbar-nav .nav-item.active .nav-link i {
   color: #fff !important;
 }
-header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item {
+header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item, header .NavBar .container .row .col-lg-12 nav .collapsing .navbar-nav .nav-item {
   line-height: 48px;
   margin-right: 3px;
   transition: all 0.3s ease-in-out 0s;
 }
-header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item:hover .nav-link {
+header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item:hover .nav-link, header .NavBar .container .row .col-lg-12 nav .collapsing .navbar-nav .nav-item:hover .nav-link {
   background: #ed8323;
   color: #fff !important;
 }
-@media (min-width: 992px) and (max-width: 1200px) {
-  header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item:hover .nav-link {
-    padding: 1px 12px;
-  }
-}
-@media (min-width: 1200px) {
-  header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item:hover .nav-link {
-    padding: 1px 12px;
-  }
-}
-header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .nav-link {
+header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .nav-link, header .NavBar .container .row .col-lg-12 nav .collapsing .navbar-nav .nav-item .nav-link {
   font-weight: 500;
-  padding: 0px 12px;
   font-size: 15px;
   text-transform: uppercase;
   font-family: 'Roboto', arial, helvetica, sans-serif;
@@ -441,111 +568,122 @@ header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .n
   position: relative;
   z-index: 2;
 }
+@media (max-width: 576px) {
+  header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .nav-link, header .NavBar .container .row .col-lg-12 nav .collapsing .navbar-nav .nav-item .nav-link {
+    padding: 0px 12px;
+  }
+}
 @media (min-width: 576px) and (max-width: 768px) {
-  header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .nav-link {
+  header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .nav-link, header .NavBar .container .row .col-lg-12 nav .collapsing .navbar-nav .nav-item .nav-link {
     padding: 0px 12px;
   }
 }
 @media (min-width: 768px) and (max-width: 992px) {
-  header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .nav-link {
+  header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .nav-link, header .NavBar .container .row .col-lg-12 nav .collapsing .navbar-nav .nav-item .nav-link {
     padding: 0px 12px;
   }
 }
-header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .nav-link strong {
+@media (min-width: 992px) and (max-width: 1200px) {
+  header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .nav-link, header .NavBar .container .row .col-lg-12 nav .collapsing .navbar-nav .nav-item .nav-link {
+    padding: 2px 12px;
+  }
+}
+@media (min-width: 1200px) {
+  header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .nav-link, header .NavBar .container .row .col-lg-12 nav .collapsing .navbar-nav .nav-item .nav-link {
+    padding: 2px 12px;
+  }
+}
+header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .nav-link strong, header .NavBar .container .row .col-lg-12 nav .collapsing .navbar-nav .nav-item .nav-link strong {
   position: relative;
   left: 10px;
 }
-header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .nav-link i {
+header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .nav-link i, header .NavBar .container .row .col-lg-12 nav .collapsing .navbar-nav .nav-item .nav-link i {
   font-size: 1.4em;
   padding: 14px 20px;
   margin-right: -15px;
 }
 @media (max-width: 576px) {
-  header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .nav-link i {
+  header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .nav-link i, header .NavBar .container .row .col-lg-12 nav .collapsing .navbar-nav .nav-item .nav-link i {
     background: #cc6a11;
     color: #fff;
     float: right;
   }
 }
 @media (min-width: 576px) and (max-width: 768px) {
-  header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .nav-link i {
+  header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .nav-link i, header .NavBar .container .row .col-lg-12 nav .collapsing .navbar-nav .nav-item .nav-link i {
     background: #cc6a11;
     color: #fff;
   }
 }
 @media (min-width: 768px) and (max-width: 992px) {
-  header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .nav-link i {
+  header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .nav-link i, header .NavBar .container .row .col-lg-12 nav .collapsing .navbar-nav .nav-item .nav-link i {
     background: #cc6a11;
     color: #fff;
   }
 }
-header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .dropDrownItems {
-  visibility: hidden;
-  /* hides sub-menu */
-  opacity: 0;
+header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .dropDrownItems, header .NavBar .container .row .col-lg-12 nav .collapsing .navbar-nav .nav-item .dropDrownItems {
+  display: none;
   position: absolute;
-  transform: translateY(-2em);
-  z-index: -1;
-  transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0s;
+  z-index: 5;
 }
 @media (max-width: 576px) {
-  header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .dropDrownItems {
+  header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .dropDrownItems, header .NavBar .container .row .col-lg-12 nav .collapsing .navbar-nav .nav-item .dropDrownItems {
     margin-left: 50px;
   }
 }
 @media (min-width: 576px) and (max-width: 768px) {
-  header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .dropDrownItems {
+  header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .dropDrownItems, header .NavBar .container .row .col-lg-12 nav .collapsing .navbar-nav .nav-item .dropDrownItems {
     margin-left: 50px;
   }
 }
 @media (min-width: 768px) and (max-width: 992px) {
-  header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .dropDrownItems {
+  header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .dropDrownItems, header .NavBar .container .row .col-lg-12 nav .collapsing .navbar-nav .nav-item .dropDrownItems {
     margin-left: 50px;
   }
 }
-header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .dropDrownItems li {
+header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .dropDrownItems li, header .NavBar .container .row .col-lg-12 nav .collapsing .navbar-nav .nav-item .dropDrownItems li {
   list-style-type: none;
   line-height: 47px;
   width: 170px;
 }
-header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .dropDrownItems li a {
-  padding: 0px 13px;
+header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .dropDrownItems li a, header .NavBar .container .row .col-lg-12 nav .collapsing .navbar-nav .nav-item .dropDrownItems li a {
+  padding: 0px 12px;
   text-decoration: none;
   font-weight: 500;
   display: block;
   transition: background-color 0.17s ease-out;
 }
 @media (max-width: 576px) {
-  header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .dropDrownItems li a {
+  header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .dropDrownItems li a, header .NavBar .container .row .col-lg-12 nav .collapsing .navbar-nav .nav-item .dropDrownItems li a {
     background: #fff;
     color: #ed8323;
   }
 }
 @media (min-width: 576px) and (max-width: 768px) {
-  header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .dropDrownItems li a {
+  header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .dropDrownItems li a, header .NavBar .container .row .col-lg-12 nav .collapsing .navbar-nav .nav-item .dropDrownItems li a {
     background: #fff;
     color: #ed8323;
   }
 }
 @media (min-width: 768px) and (max-width: 992px) {
-  header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .dropDrownItems li a {
+  header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .dropDrownItems li a, header .NavBar .container .row .col-lg-12 nav .collapsing .navbar-nav .nav-item .dropDrownItems li a {
     background: #fff;
     color: #ed8323;
   }
 }
 @media (min-width: 992px) and (max-width: 1200px) {
-  header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .dropDrownItems li a {
+  header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .dropDrownItems li a, header .NavBar .container .row .col-lg-12 nav .collapsing .navbar-nav .nav-item .dropDrownItems li a {
     background: #333333;
     color: #fff;
   }
 }
 @media (min-width: 1200px) {
-  header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .dropDrownItems li a {
+  header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .dropDrownItems li a, header .NavBar .container .row .col-lg-12 nav .collapsing .navbar-nav .nav-item .dropDrownItems li a {
     background: #333333;
     color: #fff;
   }
 }
-header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .dropDrownItems li a span {
+header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .dropDrownItems li a span, header .NavBar .container .row .col-lg-12 nav .collapsing .navbar-nav .nav-item .dropDrownItems li a span {
   line-height: 46px;
   float: right;
   color: white;
@@ -554,71 +692,51 @@ header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .d
   transition: background-color 0.17s ease-out;
 }
 @media (max-width: 576px) {
-  header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .dropDrownItems li a span {
+  header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .dropDrownItems li a span, header .NavBar .container .row .col-lg-12 nav .collapsing .navbar-nav .nav-item .dropDrownItems li a span {
     color: #ed8323;
   }
 }
 @media (min-width: 576px) and (max-width: 768px) {
-  header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .dropDrownItems li a span {
+  header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .dropDrownItems li a span, header .NavBar .container .row .col-lg-12 nav .collapsing .navbar-nav .nav-item .dropDrownItems li a span {
     color: #ed8323;
   }
 }
 @media (min-width: 768px) and (max-width: 992px) {
-  header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .dropDrownItems li a span {
+  header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .dropDrownItems li a span, header .NavBar .container .row .col-lg-12 nav .collapsing .navbar-nav .nav-item .dropDrownItems li a span {
     color: #ed8323;
   }
 }
-header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .dropDrownItems li a:hover {
+header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .dropDrownItems li a:hover, header .NavBar .container .row .col-lg-12 nav .collapsing .navbar-nav .nav-item .dropDrownItems li a:hover {
   background: #ed8323;
 }
 @media (max-width: 576px) {
-  header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .dropDrownItems li a:hover {
+  header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .dropDrownItems li a:hover, header .NavBar .container .row .col-lg-12 nav .collapsing .navbar-nav .nav-item .dropDrownItems li a:hover {
     color: #fff;
   }
 }
 @media (min-width: 576px) and (max-width: 768px) {
-  header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .dropDrownItems li a:hover {
+  header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .dropDrownItems li a:hover, header .NavBar .container .row .col-lg-12 nav .collapsing .navbar-nav .nav-item .dropDrownItems li a:hover {
     color: #fff;
   }
 }
 @media (min-width: 768px) and (max-width: 992px) {
-  header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .dropDrownItems li a:hover {
+  header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .dropDrownItems li a:hover, header .NavBar .container .row .col-lg-12 nav .collapsing .navbar-nav .nav-item .dropDrownItems li a:hover {
     color: #fff;
   }
 }
 @media (max-width: 576px) {
-  header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .dropDrownItems li a:hover span {
+  header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .dropDrownItems li a:hover span, header .NavBar .container .row .col-lg-12 nav .collapsing .navbar-nav .nav-item .dropDrownItems li a:hover span {
     color: #fff;
   }
 }
 @media (min-width: 576px) and (max-width: 768px) {
-  header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .dropDrownItems li a:hover span {
+  header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .dropDrownItems li a:hover span, header .NavBar .container .row .col-lg-12 nav .collapsing .navbar-nav .nav-item .dropDrownItems li a:hover span {
     color: #fff;
   }
 }
 @media (min-width: 768px) and (max-width: 992px) {
-  header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .dropDrownItems li a:hover span {
+  header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .dropDrownItems li a:hover span, header .NavBar .container .row .col-lg-12 nav .collapsing .navbar-nav .nav-item .dropDrownItems li a:hover span {
     color: #fff;
-  }
-}
-@media (min-width: 992px) and (max-width: 1200px) {
-  header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item:hover .dropDrownItems {
-    visibility: visible;
-    /* shows sub-menu */
-    opacity: 1;
-    z-index: 1;
-    transform: translateY(0px);
-    transition-delay: 0s, 0s, 0.3s;
-  }
-}
-@media (min-width: 1200px) {
-  header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item:hover .dropDrownItems {
-    visibility: visible;
-    /* shows sub-menu */
-    opacity: 1;
-    z-index: 1;
-    transform: translateY(0px);
-    transition-delay: 0s, 0s, 0.3s;
   }
 }
 
@@ -1478,6 +1596,7 @@ header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .d
   border: 2px solid white;
 }
 
+
 @media (min-width: 360px) {
   #Paralax .tac h2 {
     font-size: 33px;
@@ -1536,5 +1655,114 @@ header .NavBar .container .row .col-lg-12 nav .collapse .navbar-nav .nav-item .d
   }
 }
 blockquote {
-  color: red;
+  color: red;=======
+#ActivitiesDetails {
+  padding-bottom: 50px;
+}
+#ActivitiesDetails .container .row .Path {
+  border-bottom: 1px solid #f2f2f2;
+  margin-bottom: 10px;
+}
+#ActivitiesDetails .container .row .Path ul {
+  margin: 15px 0px;
+}
+#ActivitiesDetails .container .row .Path ul li {
+  list-style-type: none;
+  float: left;
+}
+#ActivitiesDetails .container .row .Path ul li i {
+  color: #cccccc;
+  margin-left: 7px;
+  margin-right: 7px;
+}
+#ActivitiesDetails .container .row .Path ul li a {
+  text-decoration: none;
+  font-size: 13px;
+}
+#ActivitiesDetails .container .row .ShortInfo h2 {
+  line-height: 1em;
+  font-size: 39.985400000000006px;
+  font-weight: 300;
+  color: #565656;
+  margin-bottom: 10px;
+}
+#ActivitiesDetails .container .row .ShortInfo p {
+  font-size: 12px;
+  line-height: 1em;
+  color: #737373;
+  margin-bottom: 10px;
+}
+#ActivitiesDetails .container .row .ShortInfo p span {
+  color: #565656;
+}
+#ActivitiesDetails .container .row .ShortInfo ul li {
+  list-style: none;
+  float: left;
+}
+#ActivitiesDetails .container .row .ShortInfo ul li a {
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 1.5em;
+  margin-right: 10px;
+}
+#ActivitiesDetails .container .row .ShortInfo ul li a span {
+  margin-right: 2px;
+}
+#ActivitiesDetails .container .row .ShortInfo ul li:last-child a span {
+  color: #565656;
+}
+#ActivitiesDetails .container .row .Price {
+  margin-bottom: 10px;
+}
+#ActivitiesDetails .container .row .Price p {
+  text-align: right;
+}
+#ActivitiesDetails .container .row .Price p small {
+  color: #818181;
+  line-height: 1.4000000000000001em;
+}
+#ActivitiesDetails .container .row .Price p span {
+  font-size: 42px;
+  line-height: 1em;
+  color: #686868;
+}
+#ActivitiesDetails .container .row .Gallary .nav .nav-item a {
+  font-size: 13px;
+  padding: 10px 15px;
+}
+#ActivitiesDetails .container .row .Gallary .nav .nav-item a i {
+  margin-right: 5px;
+}
+#ActivitiesDetails .container .row .Gallary .tab-content .Photos .container-fluid .row .col-lg-3 {
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+#ActivitiesDetails .container .row .Gallary .tab-content .Photos .container-fluid .row .col-lg-3 i {
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 50%;
+  position: absolute;
+  top: 70%;
+  left: 40%;
+  opacity: 0;
+  z-index: -1;
+  transition: all .4s ease;
+}
+#ActivitiesDetails .container .row .Gallary .tab-content .Photos .container-fluid .row .col-lg-3 img {
+  transform: scale(1);
+  opacity: 1;
+  transition: all 4s ease;
+}
+#ActivitiesDetails .container .row .Gallary .tab-content .Photos .container-fluid .row .col-lg-3:hover i {
+  top: 40%;
+  opacity: 1;
+  z-index: 1;
+}
+#ActivitiesDetails .container .row .Gallary .tab-content .Photos .container-fluid .row .col-lg-3:hover img {
+  transform: scale(1.2);
+  opacity: .7;
+
 }
