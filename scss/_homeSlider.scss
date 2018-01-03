@@ -8,6 +8,10 @@
 	background-size: cover;
 	position: relative;
 }
+#Slider{
+
+	text-align: center;
+}
 .SLiderItems{
 color: white;
 z-index: 3;
@@ -24,7 +28,6 @@ z-index: 3;
 	.SliderWeather{
 
 		span{
-			text-align: center;
 			font-size: 2em;
 			margin-right: 10px;
 		}
@@ -37,18 +40,17 @@ z-index: 3;
 		h6{
 			margin-top: 10px;
 			font-size: 1.5em;
-			text-align: center;
+			
 			font-weight: 400;
 		}
 		h3{
 			    font-weight: 300;
-			    text-align: center;
+			 
 			    font-size: 3em;
 			    color: #26C3F3;
 		}
 		a{
 			text-decoration: none;
-			margin-left : 39% ;
 			border: 2px solid gray;
 		}
 
@@ -89,7 +91,7 @@ background: black;
 
 	}
 
-	  	@media (max-width: 360px){
+	  	@media (min-width: 360px){
 			
 			#Slider{
 				.SliderCity{
@@ -103,4 +105,17 @@ background: black;
 					}
 				}
 			}
-    	}
+
+}
+	  	@media (min-width: 412px){
+		
+		#Slider{
+			.SliderCity{
+				h1{
+					font-size: 4em;
+				}
+			}
+		}
+
+		
+}

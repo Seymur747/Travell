@@ -1,11 +1,22 @@
 body{
-	font-family: 'Open Sans', sans-serif;
+	color: #737373;
+    font-family: 'Open Sans', Tahoma, Arial, helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 1.6em;
+    font-weight: 400;
 	
 }
-
+hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid #eeeeee;
+    width: 100%;
+}
 .color-Main{
   background: #ed8323;
   color:#fff !important;
+
 }
 .color-Main-cl{
   color: #ed8323;
@@ -13,6 +24,10 @@ body{
   &:hover{
 	color:darken(#ed8323,10%);
   }
+}
+.color-Main-bg::selection {
+  background: #ed8323;
+  color:#fff;
 }
 .color-second{
   background: #0ebcf2;
@@ -24,6 +39,10 @@ body{
 	color:darken(#0ebcf2,10%);
   }
 }
+.color-second-bg::selection {
+  background: #0ebcf2;
+  color:#fff;
+}
 .color-three{
   background: #b66672;
 }
@@ -33,6 +52,10 @@ body{
   &:hover{
 	color:darken(#b66672,10%);
   }
+}
+.color-three-bg::selection {
+  background: #b66672;
+  color:#fff;
 }
 .color-fourth{
   background: #b66672;
@@ -44,6 +67,10 @@ body{
 	color:darken(#b66672,10%);
   }
 }
+.color-fourth-bg::selection {
+  background: #b66672;
+  color:#fff;
+}
 .color-five{
 	background: #4F96B6;
 }
@@ -53,6 +80,10 @@ body{
   &:hover{
 	color:darken(#4F96B6,10%);
   }
+}
+.color-five-bg::selection {
+  background: #4F96B6;
+  color:#fff;
 }
 .color-six{
 	background: #E45E66;
@@ -64,6 +95,10 @@ body{
 	color:darken(#E45E66,10%);
   }
 }
+.color-six-bg::selection {
+  background: #E45E66;
+  color:#fff;
+}
 .color-seven{
 	background: #96AA66;
 }
@@ -73,6 +108,10 @@ body{
   &:hover{
 	color:darken(#96AA66,10%);
   }
+}
+.color-seven-bg::selection {
+  background: #96AA66;
+  color:#fff;
 }
 .color-eight{
 	background: #5B84AA;
@@ -84,6 +123,10 @@ body{
 	color:darken(#5B84AA,10%);
   }
 }
+.color-eight-bg::selection {
+  background: #5B84AA;
+  color:#fff;
+}
 .color-nine{
 	background: #CA2AC6;
 }
@@ -93,6 +136,10 @@ body{
   &:hover{
 	color:darken(#CA2AC6,10%);
   }
+}
+.color-nine-bg::selection {
+  background: #CA2AC6;
+  color:#fff;
 }
 .color-ten{
 	background: #CF315A;
@@ -104,6 +151,10 @@ body{
 	color:darken(#CF315A,10%);
   }
 }
+.color-ten-bg::selection {
+  background: #CF315A;
+  color:#fff;
+}
 .color-eleven{
 	background: #74C683;
 }
@@ -113,6 +164,10 @@ body{
   &:hover{
 	color:darken(#74C683,10%);
   }
+}
+.color-eleven-bg::selection {
+  background: #74C683;
+  color:#fff;
 }
 .color-twelve{
 	background: #30BBB1;
@@ -124,6 +179,10 @@ body{
 	color:darken(#30BBB1,10%);
   }
 }
+.color-twelve-bg::selection {
+  background: #30BBB1;
+  color:#fff;
+}
 .color-thirteen{
 	background: #7646B8;
 }
@@ -133,6 +192,10 @@ body{
   &:hover{
 	color:darken(#7646B8,10%);
   }
+}
+.color-thirteen-bg::selection {
+  background: #7646B8;
+  color:#fff;
 }
 .color-fourteen{
 	background: #966650;
@@ -144,6 +207,10 @@ body{
 	color:darken(#966650,10%);
   }
 }
+.color-fourteen-bg::selection {
+  background: #966650;
+  color:#fff;
+}
 .color-fifteen{
 	background: #1A5AE4;
 }
@@ -154,6 +221,10 @@ body{
 	color:darken(#1A5AE4,10%);
   }
 }
+.color-fifteen-bg::selection {
+  background: #1A5AE4;
+  color:#fff;
+}
 .color-sixteen{
 	background: #FF1D13;
 }
@@ -163,6 +234,10 @@ body{
   &:hover{
 	color:darken(#FF1D13,10%);
   }
+}
+.color-sixteen-bg::selection {
+  background: #FF1D13;
+  color:#fff;
 }
 .LastLi{
 	color:#999999;
@@ -199,24 +274,31 @@ body{
     transform: rotateZ(360deg);
   }
 }
+
   
 										    		
 										    		
 		//Extra Small devices (landscape phones , 576px and up)
     	@media (max-width: 576px){
-    	
+    		.container{
+    			width: 99.5% !important;
+    		}
 
 
     	}								    		
 		//Small devices (landscape phones , 576px and up)
     	@media (min-width: 576px)  and (max-width: 768px){
-    		
+    		.container{
+    			width: 99.5% !important;
+    		}
 
 
     	}
     	//Medimum (tablets  , 768px and up)
     	@media (min-width: 768px)  and (max-width: 992px){
-			
+			.container{
+    			width: 99.5% !important;
+    		}
     	}
     	//Large devices (desktops  , 992px and up)
     	@media (min-width: 992px)  and (max-width: 1200px){
@@ -228,6 +310,23 @@ body{
 			
 
     	}
+
+.pulse:hover {
+  animation-name: pulse_animation;
+  animation-duration: 1000ms;
+  transform-origin:70% 70%;
+  animation-timing-function: linear;
+}
+@keyframes pulse_animation {
+  0% { transform: scale(1); }
+  30% { transform: scale(1); }
+  40% { transform: scale(1); }
+  50% { transform: scale(1); }
+  60% { transform: scale(1); }
+  70% { transform: scale(1); }
+  80% { transform: scale(1); }
+  100% { transform: scale(1); }
+}
 
 
 @import "elements";
@@ -246,9 +345,11 @@ body{
 @import "homeParalax";
 @import "compliments";
 @import "ActivitiesDeatilsContent";
-
-// .noPadding{
-
-
-//     padding: 0px ;
-//   }
+@import "PopUp";
+@import "ActivitiesNear";
+@import "RentalDetails";
+@import "CarsDetailContent";
+@import "ActivitiesResult";
+@import "ChangeSearch";
+@import "RentalResult";
+@import "CarsResult";

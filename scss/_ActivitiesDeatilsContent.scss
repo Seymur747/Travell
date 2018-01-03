@@ -69,10 +69,14 @@
 				margin-bottom:10px;
 				p{
 					text-align:right;
-
+					sub{
+						font-size: 13px;
+						color: #818181;
+					}
 					small{
 						color:#818181;
 						line-height: 1.4000000000000001em;
+						font-size: 22px;
 					}
 					span{
 						font-size: 42px;
@@ -85,14 +89,34 @@
 				.nav{
 					
 						.nav-item{
-							a{
+							margin-right:3px;
+							a,.active{
 								font-size:13px;
 								padding: 10px 15px;
+								border-radius:0px;
+								transition:background .2s ease;
 								i{
 									margin-right:5px;
 									
 								}
+								&:hover{
+									background: transparent;
+								}
 							}
+							a{
+								font-size:13px;
+								padding: 10px 15px;
+								border-radius:0px;
+								transition:background .5s ease;
+								i{
+									margin-right:5px;
+									
+								}
+								&:hover{
+									background: #eeeeee;
+								}
+							}
+							
 						}
 					
 				}
@@ -112,11 +136,58 @@
 											line-height:30px;
 											border-radius:50%;
 											position: absolute;
-											top:70%;
-											left:40%;
+											
 											opacity:0;
 											z-index: -1;
 											transition:all .4s ease;
+											//Extra Small devices (landscape phones , 576px and up)
+    	@media (max-width: 576px){
+    		top: 70%;
+    		left: 44%;
+			height:40px;
+			width: 40px;
+			line-height:40px;
+			font-size: 25px;
+
+    	}								    		
+		//Small devices (landscape phones , 576px and up)
+    	@media (min-width: 576px)  and (max-width: 768px){
+    		top: 70%;
+    		left: 44%;
+			height:40px;
+			width: 40px;
+			line-height:40px;
+			font-size: 25px;
+    	}
+    	//Medimum (tablets  , 768px and up)
+    	@media (min-width: 768px)  and (max-width: 992px){
+			top: 70%;
+    		left: 47%;
+			height:50px;
+			width: 50px;
+			line-height:50px;
+			font-size: 30px;
+    	}
+    	//Large devices (desktops  , 992px and up)
+    	@media (min-width: 992px)  and (max-width: 1200px){
+			top: 60%;
+    		left: 41%;
+			height:30px;
+			width: 30px;
+			line-height:30px;
+			font-size: 20px;
+			
+    	}
+    	//Extra Large devices (large desktops , 1200px and up)
+    	@media (min-width: 1200px){
+			top: 60%;
+    		left: 41%;
+			height:30px;
+			width: 30px;
+			line-height:30px;
+			font-size: 20px;
+
+    	}
 
 										}
 										img{
@@ -125,9 +196,28 @@
 											transition:all 4s ease;
 										}
 									&:hover i{
-										top:40%;
 										opacity:1;
 										z-index: 1;
+										//Extra Small devices (landscape phones , 576px and up)
+								    	@media (max-width: 576px){
+								    		top:42%;
+								    	}								    		
+										//Small devices (landscape phones , 576px and up)
+								    	@media (min-width: 576px)  and (max-width: 768px){
+								    		top:42%;
+								    	}
+								    	//Medimum (tablets  , 768px and up)
+								    	@media (min-width: 768px)  and (max-width: 992px){
+											top:42%;
+								    	}
+								    	//Large devices (desktops  , 992px and up)
+								    	@media (min-width: 992px)  and (max-width: 1200px){
+											top:36%;								
+								    	}
+								    	//Extra Large devices (large desktops , 1200px and up)
+								    	@media (min-width: 1200px){
+											top:36%;
+								    	}
 									}
 									&:hover img{
 										transform:scale(1.2);
@@ -164,7 +254,7 @@
 					padding:10px 16px;
 					display:inline-block;
 					&:hover{
-						border-radius:10px;
+						border-radius:15px;
 					}
 				}
 			}

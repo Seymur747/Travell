@@ -1,0 +1,279 @@
+#CarsResult{
+	.container{
+		.row{
+			.Path{
+				border-bottom:1px solid #f2f2f2;
+			
+				ul{
+					margin:15px 0px;
+					li{
+						list-style-type: none;
+						float:left;
+						
+						i{
+							color:#cccccc;
+							margin-left:7px;
+							margin-right:7px;
+						}
+						a{
+							text-decoration:none;
+							font-size: 13px;
+						}
+					}
+				}
+			}
+			.ChangeSearch{
+				    margin-bottom: 15px;
+   					margin-top: 15px;
+				h3{
+					    font-size: 30.758000000000003px;
+					    font-weight: 300;
+					    color: #565656;
+					    line-height: 1.3em;
+					a{
+						text-decoration:none;
+						font-size: 12px;
+					}
+				}
+			}
+			.RentalResultLeft{
+				margin-bottom:30px;
+				.row{
+					.Search{
+						margin-bottom: 30px;
+						.SearchInto{
+							    border-radius: 5px;
+							    padding: 15px 20px;
+							    border: 1px solid #ed8323;
+							    box-shadow: 0 2px 1px rgba(0,0,0,0.15);
+							form{
+								.row{
+									.Location,.CheckIn,.CheckOut,.CheckInTime {
+										.form-group{
+											position: relative;
+											.input-group.WithOutIcon{
+												
+												
+												.form-control{
+														
+															border-radius:0px;
+															border-left:1px solid #eee !important;
+															
+															padding: 8px 12px;
+															width: 100%;
+
+															&:focus{
+															
+																border-color: rgba(0,0,0,.15);
+																border-left:1px solid #ed8323;
+															}
+														
+													}
+
+
+											}
+											.input-group{
+												width: 100%;
+												
+												.input-group-addon{
+														border-radius:0px;
+														background: transparent;
+														border-right: 1px solid transparent !important;
+													
+												}
+												.form-control{
+														
+															border-radius:0px;
+															border-left:1px solid transparent !important;
+															padding-left: 0px;
+															width: 100%;
+
+															&:focus{
+															
+																border-color: rgba(0,0,0,.15);
+																border-left:1px solid #ed8323;
+															}
+														
+													}
+
+
+											}
+											.InTime{
+													box-shadow: 0 2px 1px rgba(0,0,0,0.2);
+													position: absolute;
+													z-index: 5;
+													background: #fff;
+													border:1px solid #eee;
+													width: 190px;
+													padding: 0px 15px;
+													display: none;
+													.row{
+														i{
+															display: inline-block;
+														    margin: 0;
+														    outline: 0;
+														    color: #333;
+														    width: 35px;
+														    height: 35px;
+														    margin-bottom: 5px;
+														    margin-top: 5px;
+														    line-height: 35px;
+														    text-align: center;
+														    font-size: 20px;
+														    cursor:pointer;
+														    transition:background .3s ease;
+														    &:hover{
+														    	background: #eee;
+														    }
+														}
+														p{
+															    width: 35px;
+															    height: 35px;
+															    line-height: 35px;
+															    margin: 0;
+															    text-align: center;
+															    color: #000;
+															    border:1px solid #333;
+														}
+														
+													}
+												}
+
+										}
+									}
+									.Guests,.Rooms{
+										.form-group{
+											label{
+												display:block;
+											}
+											.btn-group{
+												.btn.active{
+													    background: #ed8323;
+													    border-color: #e27513;
+													    box-shadow: none;
+													    color: #fff;
+													     &:hover{
+													    	   background: #ed8323;
+													 		   border-color: #e27513;
+													 		   box-shadow: none;
+													 		   color: #fff;
+													    }
+												}
+												.btn{
+													    border-radius: 50% !important;
+													    height: 28px;
+													    line-height: 26px;
+													    width: 28px;
+													    padding: 0;
+													    background: none;
+													    color: #737373;
+													    border: 1px solid transparent;
+													    cursor:pointer;
+													    &:hover{
+													    	color: #737373;
+														    border-color: #737373;
+														    background: none;
+													    }
+													input{
+
+													}
+												}
+
+											}
+										}
+									}
+									input.color-Main{
+										margin-left: 15px;
+										display:inline-block;
+										cursor:pointer;
+										&:hover{
+											border-radius:10px;
+											background: darken(#ed8323,10%);
+										}	
+									}
+								}
+							}
+						}
+					}
+							.Filter{
+								.FilterInto{
+									border-radius: 5px;
+								    font-size: 11px;
+								    background: #4d4d4d;
+								    color: #fff;
+								    padding: 15px 0;
+								    
+								    border: 1px solid #262626;
+								    h3{
+								    	    padding: 0 20px;
+								    	    font-size: 30.758000000000003px;
+								    	    font-weight: 300;
+								    	    color:#fff;
+								    }
+								 	ul{
+								 		li{
+								 			list-style: none;
+								 			margin-top: 15px;
+										    padding: 15px 20px 0 20px;
+										    border-top: 1px solid #3b3b3b;	
+										    .Checkbox{
+										    	    display: block;
+												    min-height: 20px;
+												    margin-top: 10px;
+												    margin-bottom: 10px;
+												    padding-left: 20px;
+												    label{
+												    	display: inline;
+													    font-weight: normal;
+													    cursor: pointer;
+													    .i-checker{
+													    	display: inline-block;
+														    vertical-align: middle;
+														    margin: 0;
+														    padding: 0;
+														    width: 22px;
+														    height: 22px;
+														    border: 1px solid #ccc;
+														    cursor: pointer;
+														    top: 1px;
+														    left: -7px;
+														    margin-left: -13px;
+														    float: left;
+														    text-align: center;
+														    line-height: 20px;
+														    transition: 0.3s;
+														    position: relative;
+															overflow:hidden;
+														    &:hover{
+														    	border: 1px solid #ed8323;
+														    }
+														    input{
+														    	position: absolute;
+				   												opacity: 0;
+				   												left:-20px;
+														    }
+														    i{
+														    	    transition: 0.3s;
+																    position: relative;
+																    top:-25px;
+																    display: block;
+																    opacity: 1;
+																    color: #fff;
+																    font-size: 14px;
+														    }
+														    ins{
+														    	z-index:2;
+														    }
+													    }
+												    }
+										    }
+								 		}
+								 	}
+								}
+					}
+				}
+
+			}
+		}
+	}	
+}

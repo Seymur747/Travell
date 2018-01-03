@@ -77,8 +77,10 @@ header{
 										position: absolute;
 										bottom:0px;
 										z-index: 2;
+										display:none;
 									}
 									.flags{
+										display:none;
 										background: rgb(51, 51, 51);
 										position: absolute;
 										left: -10px;
