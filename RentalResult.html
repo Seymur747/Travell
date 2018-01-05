@@ -767,6 +767,12 @@
              </div>
              <div class="Pagination">
                <div class="row">
+                 <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                   <p>
+                     <span>Not what you're looking for?</span>
+                     <a class=" TrySearchRental color-Main-cl" href="#">Try your search again</a>
+                   </p>
+                 </div>
                  <div class="col-sm-12 col-md-12 col-lg-7 col-xl-7">
                    <ul class="pl-0 clearfix">
                      <li class="active">
@@ -802,19 +808,14 @@
 
                    </ul>
                  </div>
-                 <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                   <p>
-                     <span>Not what you're looking for?</span>
-                     <a class=" TrySearch color-Main-cl" href="#">Try your search again</a>
-                   </p>
-                 </div>
+                
                </div>
              </div>
         </div>
       </div>
     </div>
   </section>
- <section id = "ChangeSearch">
+ <section id = "ChangeSearchRental">
     <div class="container d-flex align-items-center justify-content-center">
       <div class="row">
         <div class="col-lg-10 offset-lg-1 col-xl-10 offset-xl-1 ">
@@ -823,19 +824,19 @@
             <h3>Search for Activity</h3>
              <form style="width:100%;">
                    <div class="row">
-                  <div class="Location col-lg-6 col-xl-6">
+                  <div class="Location col-sm-12 col-md-12 col-lg-12 col-xl-12">
                         <div class="form-group">
-                         <label for="Where">Location</label>
+                         <label for="Where">Where</label>
                           <div class="input-group mb-2 mr-sm-2 mb-sm-0">
                             <div class="input-group-addon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
-                            <input type="text" class="form-control" id="Where" placeholder="City, Country or U.S. Zip Code">
+                            <input type="text" class="form-control" id="Where" value="USA, New York">
                           </div>
                       </div>
                  </div>
                 
-                  <div class="CheckIn col-lg-3 col-xl-3">
+                  <div class="CheckIn col-sm-12 col-md-12 col-lg-3 col-xl-3">
                      <div class="form-group">
-                         <label for="CheckIn">From</label>
+                         <label for="CheckIn">Check In</label>
                           <div class="input-group mb-2 mr-sm-2 mb-sm-0">
                             <div class="input-group-addon"><i class="fa fa-calendar" aria-hidden="true"></i>
 </div>
@@ -844,9 +845,9 @@
                       </div>
                      
                  </div>
-                  <div class="CheckOut col-lg-3 col-xl-3">
+                  <div class="CheckOut col-sm-12 col-md-12 col-lg-3 col-xl-3">
                      <div class="form-group">
-                         <label  for="CheckOut">To</label>
+                         <label  for="CheckOut">Check Out</label>
                           <div class="input-group mb-2 mr-sm-2 mb-sm-0">
                             <div class="input-group-addon"><i class="fa fa-calendar" aria-hidden="true"></i>
 </div>
@@ -855,7 +856,73 @@
                       </div>
                      
                  </div>
-                 <button class="btn btn-lg color-Main" type="submit">Search for Flights</button>
+                 <div class=" col-sm-12 col-md-12 col-lg-3 col-xl-3 Guests">
+                  <div class="form-group form-group- form-group-select-plus">
+                      <label>Guests</label>
+                      <div class="btn-group btn-group-select-num GuestsBtnGroup" data-toggle="buttons">
+                          <label class="btn btn-primary  active">
+                              <input type="radio" name="options" />1</label>
+                          <label class="btn btn-primary">
+                              <input type="radio" name="options" />2</label>
+                          <label class="btn btn-primary">
+                              <input type="radio" name="options" />3</label>
+                          <label class="btn btn-primary">
+                              <input type="radio" name="options" />4</label>
+                          <label class="btn btn-primary Guests5"">
+                              4+</label>
+                      </div>
+                      <select class="form-control GuestsSectionGroup hidden-sm-up hidden-sm-down">
+                          <option>1</option>
+                          <option>2</option>
+                          <option>3</option>
+                          <option>4</option>
+                          <option selected="selected">5</option>
+                          <option>6</option>
+                          <option>7</option>
+                          <option>8</option>
+                          <option>9</option>
+                          <option>10</option>
+                          <option>11</option>
+                          <option>12</option>
+                          <option>13</option>
+                          <option>14</option>
+                      </select>
+                  </div>
+                </div>
+                 <div class="col-sm-12 col-md-12 col-lg-3 col-xl-3 Rooms">
+                  <div class="form-group form-group- form-group-select-plus">
+                      <label>Rooms</label>
+                      <div class="btn-group btn-group-select-num RoomsBtnGroup" data-toggle="buttons">
+                          <label class="btn btn-primary active">
+                              <input type="radio" name="options" />1</label>
+                          <label class="btn btn-primary ">
+                              <input type="radio" name="options" />2</label>
+                          <label class="btn btn-primary">
+                              <input type="radio" name="options" />3</label>
+                          <label class="btn btn-primary">
+                              <input type="radio" name="options" />4</label>
+                          <label class="btn btn-primary Rooms5">
+                             4+</label>
+                      </div>
+                      <select class="form-control hidden-sm-up hidden-sm-down RoomsSectionGroup">
+                          <option>1</option>
+                          <option>2</option>
+                          <option>3</option>
+                          <option>4</option>
+                          <option selected="selected">5</option>
+                          <option>6</option>
+                          <option>7</option>
+                          <option>8</option>
+                          <option>9</option>
+                          <option>10</option>
+                          <option>11</option>
+                          <option>12</option>
+                          <option>13</option>
+                          <option>14</option>
+                      </select>
+                  </div>
+                </div>
+                <input class="btn color-Main" type="submit" name="" value="Update Search">
 
                 
 

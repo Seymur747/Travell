@@ -5,11 +5,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>ActivitiesResult</title>
-   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
      <link href="https://cdnjs.cloudflare.com/ajax/libs/gijgo/1.7.2/combined/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/ion.rangeSlider.css" />
+    <link rel="stylesheet" href="css/ion.rangeSlider.skinFlat.css" />
     <link rel="stylesheet" href="css/bootstrap-datepicker.css">
     <link rel="stylesheet" href="css/style.css">
    
@@ -144,7 +147,7 @@
               </ul>
            </div>
            <div class="ChangeSearch col-sm-12 col-md-12 col-lg-12 col-xl-12">
-             <h3>530 things to do in New York on Mar 22 - Apr 17 <a class="color-Main-cl TrySearch" href="#" title=""> Change search</a></h3>
+             <h3>530 things to do in New York on Mar 22 - Apr 17 <a class="color-Main-cl TrySearchActivities" href="#" title=""> Change search</a></h3>
            </div>
            <div class="Search col-sm-12 col-md-12 col-lg-12 col-xl-12">
              <div class = "SearchInto">
@@ -156,7 +159,7 @@
                          <label for="Where">Where</label>
                           <div class="input-group mb-2 mr-sm-2 mb-sm-0">
                             <div class="input-group-addon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
-                            <input type="text" class="form-control" id="Where" value="USA, New York">
+                            <input type="text" class="form-control autocomplete" id="ActiveResult" value="USA, New York">
                           </div>
                       </div>
                  </div>
@@ -670,6 +673,12 @@
              </div>
              <div class="Pagination">
                <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                   <p>
+                     <span>Not what you're looking for?</span>
+                     <a class=" TrySearchActivities color-Main-cl" href="#">Try your search again</a>
+                   </p>
+                 </div>
                  <div class="col-sm-12 col-md-12 col-lg-7 col-xl-7">
                    <ul class="pl-0 clearfix">
                      <li class="active">
@@ -705,12 +714,7 @@
 
                    </ul>
                  </div>
-                 <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                   <p>
-                     <span>Not what you're looking for?</span>
-                     <a class=" TrySearch color-Main-cl" href="#">Try your search again</a>
-                   </p>
-                 </div>
+                 
                </div>
              </div>
 
@@ -718,7 +722,7 @@
       </div>
     </div>
   </section>
-  <section id = "ChangeSearch">
+  <section id = "ChangeSearchaActivities">
     <div class="container d-flex align-items-center justify-content-center">
       <div class="row">
         <div class="col-lg-10 offset-lg-1 col-xl-10 offset-xl-1 ">
@@ -732,7 +736,7 @@
                          <label for="Where">Location</label>
                           <div class="input-group mb-2 mr-sm-2 mb-sm-0">
                             <div class="input-group-addon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
-                            <input type="text" class="form-control" id="Where" placeholder="City, Country or U.S. Zip Code">
+                            <input type="text" class="form-control autocomplete" id="ChangeSearchActivities" placeholder="City, Country or U.S. Zip Code">
                           </div>
                       </div>
                  </div>
@@ -860,7 +864,9 @@
   <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script src="js/ion.rangeSlider.js"></script>
     <script src="js/bootstrap-datepicker.js" type="text/javascript" charset="utf-8" async defer></script>
+    <script src="https://maps.googleapis.com/maps/api/js?libraries=places"></script>
     <script src="js/script.js" type="text/javascript" charset="utf-8" async defer></script>
 
 </body>

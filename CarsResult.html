@@ -147,9 +147,9 @@
               </ul>
            </div>
            <div class="ChangeSearch col-sm-12 col-md-12 col-lg-12 col-xl-12">
-             <h3>530 things to do in New York on Mar 22 - Apr 17 <a class="color-Main-cl TrySearch" href="#" title=""> Change search</a></h3>
+             <h3>530 things to do in New York on Mar 22 - Apr 17 <a class="color-Main-cl TrySearchCars" href="#" title=""> Change search</a></h3>
            </div>
-            <div class="RentalResultLeft col-sm-12 col-md-12 col-lg-3 col-xl-3">
+            <div class="CarsResultLeft col-sm-12 col-md-12 col-lg-3 col-xl-3">
           <div class="row">
              <div class="Search col-sm-12 col-md-12 col-lg-12 col-xl-12">
              <div class = "SearchInto">
@@ -161,7 +161,7 @@
                          <label for="Where">Pick Up Location</label>
                           <div class="input-group mb-2 mr-sm-2 mb-sm-0">
                             <div class="input-group-addon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
-                            <input type="text" class="form-control" id="Where" value="USA, New York">
+                            <input id="CarResultPickUp" type="text" class="form-control autocomplete" id="Where" value="USA, New York">
                           </div>
                       </div>
                  </div>
@@ -211,7 +211,7 @@
                          <label for="Where">Drop Off Location</label>
                           <div class="input-group mb-2 mr-sm-2 mb-sm-0">
                             <div class="input-group-addon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
-                            <input type="text" class="form-control" id="Where" value="USA, New York">
+                            <input id="CarsResultDropOff" name="CarsResultDropOff" type="text" class="form-control autocomplete" id="Where" value="USA, New York">
                           </div>
                       </div>
                  </div>
@@ -635,8 +635,721 @@
 
           </div>
         </div>
+        <div class="col-sm-12 col-md-12 col-lg-9 col-xl-9 CarsResultRight">
+           <div class = "SortRanking">
+               <span>Sort: Price (low to high)<i class="fa fa-angle-down d-inline"></i></span>
+                <div class = "SortTriangle">
+                      
+                </div>
+                <div class = "SortingBy">
+                  <ul class="clearfix pl-0 mb-0">
+                    <li><a href="#">Price (high to low)</a></li>
+                    <li><a href="#">Car Name (A-Z)</a></li>
+                    <li><a href="#">Car Name (Z-A)</a></li>
+                    <li><a href="#">Car Type</a></li>
+                    
+                    
+                    
+                  </ul>
+                </div>
+             </div>
+             <div class="ResultDivs">
+                <a href="#" title="">
+                   <div class="row">
+                    <div class="col-lg-3 col-xl-3">
+                      <img class="img-fluid" src="img/Audi-S8.png" alt="">
+                      <p>Audi S8</p>
+                    </div>
+                    <div class="col-lg-6 col-xl-6">
+                      <div class="row">
+                        <div class="col-lg-8 col-xl-8">
+                        <ul class="clearfix pl-0 mb-0 BigIcons">
+                          <li  data-toggle="tooltip" data-placement="top" title="male"><span><i class="fa fa-male" aria-hidden="true"></i></span><strong>x 5</strong></li>
+                          <li  data-toggle="tooltip" data-placement="top" title="bed"><span><i class="fa fa-car" aria-hidden="true"></i></span><strong>x 3</strong></li>
+                          <li  data-toggle="tooltip" data-placement="top" title="shower"><span><i class="fa fa-briefcase" aria-hidden="true"></i></span><strong>x 1</strong></li>
+                          <li  data-toggle="tooltip" data-placement="top" title="shower"><span><i class="fa fa-audio-description" aria-hidden="true"></i></span><strong>manual</strong></li>
+                          <li  data-toggle="tooltip" data-placement="top" title="shower"><span><i class="fa fa-tachometer" aria-hidden="true"></i></span><strong></strong></li>
+                        </ul>
+                        <ul class="clearfix pl-0 SmallIcons">
+                          <li  data-toggle="tooltip" data-placement="top" title="Climate Control"><span><i class="fa fa-thermometer-full" aria-hidden="true"></i></span></li>
+                          <li  data-toggle="tooltip" data-placement="top" title="Satellite Navigtion"><span><i class="fa fa-television" aria-hidden="true"></i></span></li>
+                          <li  data-toggle="tooltip" data-placement="top" title="Power Door Locks"><span><i class="fa fa-lock" aria-hidden="true"></i></span></li>
+                          <li  data-toggle="tooltip" data-placement="top" title="FM Radio"><span><i class="fa fa-music" aria-hidden="true"></i></span></li>
+                          <li  data-toggle="tooltip" data-placement="top" title="Tilt Steerng Wheel"><span><i class="fa fa-crosshairs" aria-hidden="true"></i></span></li>
+                          <li  data-toggle="tooltip" data-placement="top" title="Power Door"><span><i class="fa fa-window-maximize" aria-hidden="true"></i></span></li>
+                        </ul>
+
+                        </div>
+                        <div class="col-lg-4 col-xl-4">
+                          <ul class="clearfix pl-0 BlackIcons">
+                            <li  data-toggle="tooltip" data-placement="top" title="Terminal Pickup"><span><i class="fa fa-plane" aria-hidden="true"></i></span></li>
+                            <li  data-toggle="tooltip" data-placement="top" title="Shuttle Bus To Car"><span><i class="fa fa-bus" aria-hidden="true"></i></span></li>
+                          </ul>
+                        </div>
+                      </div>
+                       
+                    </div>
+                    <div class="col-lg-3 col-xl-3">
+                        <p class="mb-0"><span>$54</span><small>/day</small></p>
+                        <h6>Fullsize</h6>
+                        <input class="btn color-Main" type="button" name="" value="Select">
+                    </div>
+               </div>
+                </a>  
+             </div>
+                    <div class="ResultDivs">
+                <a href="#" title="">
+                   <div class="row">
+                    <div class="col-lg-3 col-xl-3">
+                      <img class="img-fluid" src="img/BMW-X6-facelift.png" alt="">
+                      <p>Audi S8</p>
+                    </div>
+                    <div class="col-lg-6 col-xl-6">
+                      <div class="row">
+                        <div class="col-lg-8 col-xl-8">
+                        <ul class="clearfix pl-0 mb-0 BigIcons">
+                          <li  data-toggle="tooltip" data-placement="top" title="male"><span><i class="fa fa-male" aria-hidden="true"></i></span><strong>x 5</strong></li>
+                          <li  data-toggle="tooltip" data-placement="top" title="bed"><span><i class="fa fa-car" aria-hidden="true"></i></span><strong>x 3</strong></li>
+                          <li  data-toggle="tooltip" data-placement="top" title="shower"><span><i class="fa fa-briefcase" aria-hidden="true"></i></span><strong>x 1</strong></li>
+                          <li  data-toggle="tooltip" data-placement="top" title="shower"><span><i class="fa fa-audio-description" aria-hidden="true"></i></span><strong>manual</strong></li>
+                          <li  data-toggle="tooltip" data-placement="top" title="shower"><span><i class="fa fa-tachometer" aria-hidden="true"></i></span><strong></strong></li>
+                        </ul>
+                        <ul class="clearfix pl-0 SmallIcons">
+                          <li  data-toggle="tooltip" data-placement="top" title="Climate Control"><span><i class="fa fa-thermometer-full" aria-hidden="true"></i></span></li>
+                          <li  data-toggle="tooltip" data-placement="top" title="Satellite Navigtion"><span><i class="fa fa-television" aria-hidden="true"></i></span></li>
+                          <li  data-toggle="tooltip" data-placement="top" title="Power Door Locks"><span><i class="fa fa-lock" aria-hidden="true"></i></span></li>
+                          <li  data-toggle="tooltip" data-placement="top" title="FM Radio"><span><i class="fa fa-music" aria-hidden="true"></i></span></li>
+                          <li  data-toggle="tooltip" data-placement="top" title="Tilt Steerng Wheel"><span><i class="fa fa-crosshairs" aria-hidden="true"></i></span></li>
+                          <li  data-toggle="tooltip" data-placement="top" title="Power Door"><span><i class="fa fa-window-maximize" aria-hidden="true"></i></span></li>
+                        </ul>
+
+                        </div>
+                        <div class="col-lg-4 col-xl-4">
+                          <ul class="clearfix pl-0 BlackIcons">
+                            <li  data-toggle="tooltip" data-placement="top" title="Terminal Pickup"><span><i class="fa fa-plane" aria-hidden="true"></i></span></li>
+                            <li  data-toggle="tooltip" data-placement="top" title="Shuttle Bus To Car"><span><i class="fa fa-bus" aria-hidden="true"></i></span></li>
+                          </ul>
+                        </div>
+                      </div>
+                       
+                    </div>
+                    <div class="col-lg-3 col-xl-3">
+                        <p class="mb-0"><span>$135</span><small>/day</small></p>
+                        <h6>Fullsize</h6>
+                        <input class="btn color-Main" type="button" name="" value="Select">
+                    </div>
+               </div>
+                </a>  
+             </div>
+                    <div class="ResultDivs">
+                <a href="#" title="">
+                   <div class="row">
+                    <div class="col-lg-3 col-xl-3">
+                      <img class="img-fluid" src="img/Chevrolet-Camaro.png" alt="">
+                      <p>Audi S8</p>
+                    </div>
+                    <div class="col-lg-6 col-xl-6">
+                      <div class="row">
+                        <div class="col-lg-8 col-xl-8">
+                        <ul class="clearfix pl-0 mb-0 BigIcons">
+                          <li  data-toggle="tooltip" data-placement="top" title="male"><span><i class="fa fa-male" aria-hidden="true"></i></span><strong>x 5</strong></li>
+                          <li  data-toggle="tooltip" data-placement="top" title="bed"><span><i class="fa fa-car" aria-hidden="true"></i></span><strong>x 3</strong></li>
+                          <li  data-toggle="tooltip" data-placement="top" title="shower"><span><i class="fa fa-briefcase" aria-hidden="true"></i></span><strong>x 1</strong></li>
+                          <li  data-toggle="tooltip" data-placement="top" title="shower"><span><i class="fa fa-audio-description" aria-hidden="true"></i></span><strong>manual</strong></li>
+                          <li  data-toggle="tooltip" data-placement="top" title="shower"><span><i class="fa fa-tachometer" aria-hidden="true"></i></span><strong></strong></li>
+                        </ul>
+                        <ul class="clearfix pl-0 SmallIcons">
+                          <li  data-toggle="tooltip" data-placement="top" title="Climate Control"><span><i class="fa fa-thermometer-full" aria-hidden="true"></i></span></li>
+                          <li  data-toggle="tooltip" data-placement="top" title="Satellite Navigtion"><span><i class="fa fa-television" aria-hidden="true"></i></span></li>
+                          <li  data-toggle="tooltip" data-placement="top" title="Power Door Locks"><span><i class="fa fa-lock" aria-hidden="true"></i></span></li>
+                          <li  data-toggle="tooltip" data-placement="top" title="FM Radio"><span><i class="fa fa-music" aria-hidden="true"></i></span></li>
+                          <li  data-toggle="tooltip" data-placement="top" title="Tilt Steerng Wheel"><span><i class="fa fa-crosshairs" aria-hidden="true"></i></span></li>
+                          <li  data-toggle="tooltip" data-placement="top" title="Power Door"><span><i class="fa fa-window-maximize" aria-hidden="true"></i></span></li>
+                        </ul>
+
+                        </div>
+                        <div class="col-lg-4 col-xl-4">
+                          <ul class="clearfix pl-0 BlackIcons">
+                            <li  data-toggle="tooltip" data-placement="top" title="Terminal Pickup"><span><i class="fa fa-plane" aria-hidden="true"></i></span></li>
+                            <li  data-toggle="tooltip" data-placement="top" title="Shuttle Bus To Car"><span><i class="fa fa-bus" aria-hidden="true"></i></span></li>
+                          </ul>
+                        </div>
+                      </div>
+                       
+                    </div>
+                    <div class="col-lg-3 col-xl-3">
+                        <p class="mb-0"><span>$65</span><small>/day</small></p>
+                        <h6>Fullsize</h6>
+                        <input class="btn color-Main" type="button" name="" value="Select">
+                    </div>
+               </div>
+                </a>  
+             </div>
+                    <div class="ResultDivs">
+                <a href="#" title="">
+                   <div class="row">
+                    <div class="col-lg-3 col-xl-3">
+                      <img class="img-fluid" src="img/Honda-Civic.png" alt="">
+                      <p>Audi S8</p>
+                    </div>
+                    <div class="col-lg-6 col-xl-6">
+                      <div class="row">
+                        <div class="col-lg-8 col-xl-8">
+                        <ul class="clearfix pl-0 mb-0 BigIcons">
+                          <li  data-toggle="tooltip" data-placement="top" title="male"><span><i class="fa fa-male" aria-hidden="true"></i></span><strong>x 5</strong></li>
+                          <li  data-toggle="tooltip" data-placement="top" title="bed"><span><i class="fa fa-car" aria-hidden="true"></i></span><strong>x 3</strong></li>
+                          <li  data-toggle="tooltip" data-placement="top" title="shower"><span><i class="fa fa-briefcase" aria-hidden="true"></i></span><strong>x 1</strong></li>
+                          <li  data-toggle="tooltip" data-placement="top" title="shower"><span><i class="fa fa-audio-description" aria-hidden="true"></i></span><strong>manual</strong></li>
+                          <li  data-toggle="tooltip" data-placement="top" title="shower"><span><i class="fa fa-tachometer" aria-hidden="true"></i></span><strong></strong></li>
+                        </ul>
+                        <ul class="clearfix pl-0 SmallIcons">
+                          <li  data-toggle="tooltip" data-placement="top" title="Climate Control"><span><i class="fa fa-thermometer-full" aria-hidden="true"></i></span></li>
+                          <li  data-toggle="tooltip" data-placement="top" title="Satellite Navigtion"><span><i class="fa fa-television" aria-hidden="true"></i></span></li>
+                          <li  data-toggle="tooltip" data-placement="top" title="Power Door Locks"><span><i class="fa fa-lock" aria-hidden="true"></i></span></li>
+                          <li  data-toggle="tooltip" data-placement="top" title="FM Radio"><span><i class="fa fa-music" aria-hidden="true"></i></span></li>
+                          <li  data-toggle="tooltip" data-placement="top" title="Tilt Steerng Wheel"><span><i class="fa fa-crosshairs" aria-hidden="true"></i></span></li>
+                          <li  data-toggle="tooltip" data-placement="top" title="Power Door"><span><i class="fa fa-window-maximize" aria-hidden="true"></i></span></li>
+                        </ul>
+
+                        </div>
+                        <div class="col-lg-4 col-xl-4">
+                          <ul class="clearfix pl-0 BlackIcons">
+                            <li  data-toggle="tooltip" data-placement="top" title="Terminal Pickup"><span><i class="fa fa-plane" aria-hidden="true"></i></span></li>
+                            <li  data-toggle="tooltip" data-placement="top" title="Shuttle Bus To Car"><span><i class="fa fa-bus" aria-hidden="true"></i></span></li>
+                          </ul>
+                        </div>
+                      </div>
+                       
+                    </div>
+                    <div class="col-lg-3 col-xl-3">
+                        <p class="mb-0"><span>$90</span><small>/day</small></p>
+                        <h6>Fullsize</h6>
+                        <input class="btn color-Main" type="button" name="" value="Select">
+                    </div>
+               </div>
+                </a>  
+             </div>
+                    <div class="ResultDivs">
+                <a href="#" title="">
+                   <div class="row">
+                    <div class="col-lg-3 col-xl-3">
+                      <img class="img-fluid" src="img/Lamborghini-Mansory-Aventador.png" alt="">
+                      <p>Audi S8</p>
+                    </div>
+                    <div class="col-lg-6 col-xl-6">
+                      <div class="row">
+                        <div class="col-lg-8 col-xl-8">
+                        <ul class="clearfix pl-0 mb-0 BigIcons">
+                          <li  data-toggle="tooltip" data-placement="top" title="male"><span><i class="fa fa-male" aria-hidden="true"></i></span><strong>x 5</strong></li>
+                          <li  data-toggle="tooltip" data-placement="top" title="bed"><span><i class="fa fa-car" aria-hidden="true"></i></span><strong>x 3</strong></li>
+                          <li  data-toggle="tooltip" data-placement="top" title="shower"><span><i class="fa fa-briefcase" aria-hidden="true"></i></span><strong>x 1</strong></li>
+                          <li  data-toggle="tooltip" data-placement="top" title="shower"><span><i class="fa fa-audio-description" aria-hidden="true"></i></span><strong>manual</strong></li>
+                          <li  data-toggle="tooltip" data-placement="top" title="shower"><span><i class="fa fa-tachometer" aria-hidden="true"></i></span><strong></strong></li>
+                        </ul>
+                        <ul class="clearfix pl-0 SmallIcons">
+                          <li  data-toggle="tooltip" data-placement="top" title="Climate Control"><span><i class="fa fa-thermometer-full" aria-hidden="true"></i></span></li>
+                          <li  data-toggle="tooltip" data-placement="top" title="Satellite Navigtion"><span><i class="fa fa-television" aria-hidden="true"></i></span></li>
+                          <li  data-toggle="tooltip" data-placement="top" title="Power Door Locks"><span><i class="fa fa-lock" aria-hidden="true"></i></span></li>
+                          <li  data-toggle="tooltip" data-placement="top" title="FM Radio"><span><i class="fa fa-music" aria-hidden="true"></i></span></li>
+                          <li  data-toggle="tooltip" data-placement="top" title="Tilt Steerng Wheel"><span><i class="fa fa-crosshairs" aria-hidden="true"></i></span></li>
+                          <li  data-toggle="tooltip" data-placement="top" title="Power Door"><span><i class="fa fa-window-maximize" aria-hidden="true"></i></span></li>
+                        </ul>
+
+                        </div>
+                        <div class="col-lg-4 col-xl-4">
+                          <ul class="clearfix pl-0 BlackIcons">
+                            <li  data-toggle="tooltip" data-placement="top" title="Terminal Pickup"><span><i class="fa fa-plane" aria-hidden="true"></i></span></li>
+                            <li  data-toggle="tooltip" data-placement="top" title="Shuttle Bus To Car"><span><i class="fa fa-bus" aria-hidden="true"></i></span></li>
+                          </ul>
+                        </div>
+                      </div>
+                       
+                    </div>
+                    <div class="col-lg-3 col-xl-3">
+                        <p class="mb-0"><span>$120</span><small>/day</small></p>
+                        <h6>Fullsize</h6>
+                        <input class="btn color-Main" type="button" name="" value="Select">
+                    </div>
+               </div>
+                </a>  
+             </div>
+                    <div class="ResultDivs">
+                <a href="#" title="">
+                   <div class="row">
+                    <div class="col-lg-3 col-xl-3">
+                      <img class="img-fluid" src="img/Nissan-GT-R.png" alt="">
+                      <p>Audi S8</p>
+                    </div>
+                    <div class="col-lg-6 col-xl-6">
+                      <div class="row">
+                        <div class="col-lg-8 col-xl-8">
+                        <ul class="clearfix pl-0 mb-0 BigIcons">
+                          <li  data-toggle="tooltip" data-placement="top" title="male"><span><i class="fa fa-male" aria-hidden="true"></i></span><strong>x 5</strong></li>
+                          <li  data-toggle="tooltip" data-placement="top" title="bed"><span><i class="fa fa-car" aria-hidden="true"></i></span><strong>x 3</strong></li>
+                          <li  data-toggle="tooltip" data-placement="top" title="shower"><span><i class="fa fa-briefcase" aria-hidden="true"></i></span><strong>x 1</strong></li>
+                          <li  data-toggle="tooltip" data-placement="top" title="shower"><span><i class="fa fa-audio-description" aria-hidden="true"></i></span><strong>manual</strong></li>
+                          <li  data-toggle="tooltip" data-placement="top" title="shower"><span><i class="fa fa-tachometer" aria-hidden="true"></i></span><strong></strong></li>
+                        </ul>
+                        <ul class="clearfix pl-0 SmallIcons">
+                          <li  data-toggle="tooltip" data-placement="top" title="Climate Control"><span><i class="fa fa-thermometer-full" aria-hidden="true"></i></span></li>
+                          <li  data-toggle="tooltip" data-placement="top" title="Satellite Navigtion"><span><i class="fa fa-television" aria-hidden="true"></i></span></li>
+                          <li  data-toggle="tooltip" data-placement="top" title="Power Door Locks"><span><i class="fa fa-lock" aria-hidden="true"></i></span></li>
+                          <li  data-toggle="tooltip" data-placement="top" title="FM Radio"><span><i class="fa fa-music" aria-hidden="true"></i></span></li>
+                          <li  data-toggle="tooltip" data-placement="top" title="Tilt Steerng Wheel"><span><i class="fa fa-crosshairs" aria-hidden="true"></i></span></li>
+                          <li  data-toggle="tooltip" data-placement="top" title="Power Door"><span><i class="fa fa-window-maximize" aria-hidden="true"></i></span></li>
+                        </ul>
+
+                        </div>
+                        <div class="col-lg-4 col-xl-4">
+                          <ul class="clearfix pl-0 BlackIcons">
+                            <li  data-toggle="tooltip" data-placement="top" title="Terminal Pickup"><span><i class="fa fa-plane" aria-hidden="true"></i></span></li>
+                            <li  data-toggle="tooltip" data-placement="top" title="Shuttle Bus To Car"><span><i class="fa fa-bus" aria-hidden="true"></i></span></li>
+                          </ul>
+                        </div>
+                      </div>
+                       
+                    </div>
+                    <div class="col-lg-3 col-xl-3">
+                        <p class="mb-0"><span>$66</span><small>/day</small></p>
+                        <h6>Fullsize</h6>
+                        <input class="btn color-Main" type="button" name="" value="Select">
+                    </div>
+               </div>
+                </a>  
+             </div>
+                    <div class="ResultDivs">
+                <a href="#" title="">
+                   <div class="row">
+                    <div class="col-lg-3 col-xl-3">
+                      <img class="img-fluid" src="img/Mercedes-Benz-Clasa-G-facelift.png" alt="">
+                      <p>Audi S8</p>
+                    </div>
+                    <div class="col-lg-6 col-xl-6">
+                      <div class="row">
+                        <div class="col-lg-8 col-xl-8">
+                        <ul class="clearfix pl-0 mb-0 BigIcons">
+                          <li  data-toggle="tooltip" data-placement="top" title="male"><span><i class="fa fa-male" aria-hidden="true"></i></span><strong>x 5</strong></li>
+                          <li  data-toggle="tooltip" data-placement="top" title="bed"><span><i class="fa fa-car" aria-hidden="true"></i></span><strong>x 3</strong></li>
+                          <li  data-toggle="tooltip" data-placement="top" title="shower"><span><i class="fa fa-briefcase" aria-hidden="true"></i></span><strong>x 1</strong></li>
+                          <li  data-toggle="tooltip" data-placement="top" title="shower"><span><i class="fa fa-audio-description" aria-hidden="true"></i></span><strong>manual</strong></li>
+                          <li  data-toggle="tooltip" data-placement="top" title="shower"><span><i class="fa fa-tachometer" aria-hidden="true"></i></span><strong></strong></li>
+                        </ul>
+                        <ul class="clearfix pl-0 SmallIcons">
+                          <li  data-toggle="tooltip" data-placement="top" title="Climate Control"><span><i class="fa fa-thermometer-full" aria-hidden="true"></i></span></li>
+                          <li  data-toggle="tooltip" data-placement="top" title="Satellite Navigtion"><span><i class="fa fa-television" aria-hidden="true"></i></span></li>
+                          <li  data-toggle="tooltip" data-placement="top" title="Power Door Locks"><span><i class="fa fa-lock" aria-hidden="true"></i></span></li>
+                          <li  data-toggle="tooltip" data-placement="top" title="FM Radio"><span><i class="fa fa-music" aria-hidden="true"></i></span></li>
+                          <li  data-toggle="tooltip" data-placement="top" title="Tilt Steerng Wheel"><span><i class="fa fa-crosshairs" aria-hidden="true"></i></span></li>
+                          <li  data-toggle="tooltip" data-placement="top" title="Power Door"><span><i class="fa fa-window-maximize" aria-hidden="true"></i></span></li>
+                        </ul>
+
+                        </div>
+                        <div class="col-lg-4 col-xl-4">
+                          <ul class="clearfix pl-0 BlackIcons">
+                            <li  data-toggle="tooltip" data-placement="top" title="Terminal Pickup"><span><i class="fa fa-plane" aria-hidden="true"></i></span></li>
+                            <li  data-toggle="tooltip" data-placement="top" title="Shuttle Bus To Car"><span><i class="fa fa-bus" aria-hidden="true"></i></span></li>
+                          </ul>
+                        </div>
+                      </div>
+                       
+                    </div>
+                    <div class="col-lg-3 col-xl-3">
+                        <p class="mb-0"><span>$85</span><small>/day</small></p>
+                        <h6>Fullsize</h6>
+                        <input class="btn color-Main" type="button" name="" value="Select">
+                    </div>
+               </div>
+                </a>  
+             </div>
+                    <div class="ResultDivs">
+                <a href="#" title="">
+                   <div class="row">
+                    <div class="col-lg-3 col-xl-3">
+                      <img class="img-fluid" src="img/Volkswagen-Touareg-Edition-X.png" alt="">
+                      <p>Audi S8</p>
+                    </div>
+                    <div class="col-lg-6 col-xl-6">
+                      <div class="row">
+                        <div class="col-lg-8 col-xl-8">
+                        <ul class="clearfix pl-0 mb-0 BigIcons">
+                          <li  data-toggle="tooltip" data-placement="top" title="male"><span><i class="fa fa-male" aria-hidden="true"></i></span><strong>x 5</strong></li>
+                          <li  data-toggle="tooltip" data-placement="top" title="bed"><span><i class="fa fa-car" aria-hidden="true"></i></span><strong>x 3</strong></li>
+                          <li  data-toggle="tooltip" data-placement="top" title="shower"><span><i class="fa fa-briefcase" aria-hidden="true"></i></span><strong>x 1</strong></li>
+                          <li  data-toggle="tooltip" data-placement="top" title="shower"><span><i class="fa fa-audio-description" aria-hidden="true"></i></span><strong>manual</strong></li>
+                          <li  data-toggle="tooltip" data-placement="top" title="shower"><span><i class="fa fa-tachometer" aria-hidden="true"></i></span><strong></strong></li>
+                        </ul>
+                        <ul class="clearfix pl-0 SmallIcons">
+                          <li  data-toggle="tooltip" data-placement="top" title="Climate Control"><span><i class="fa fa-thermometer-full" aria-hidden="true"></i></span></li>
+                          <li  data-toggle="tooltip" data-placement="top" title="Satellite Navigtion"><span><i class="fa fa-television" aria-hidden="true"></i></span></li>
+                          <li  data-toggle="tooltip" data-placement="top" title="Power Door Locks"><span><i class="fa fa-lock" aria-hidden="true"></i></span></li>
+                          <li  data-toggle="tooltip" data-placement="top" title="FM Radio"><span><i class="fa fa-music" aria-hidden="true"></i></span></li>
+                          <li  data-toggle="tooltip" data-placement="top" title="Tilt Steerng Wheel"><span><i class="fa fa-crosshairs" aria-hidden="true"></i></span></li>
+                          <li  data-toggle="tooltip" data-placement="top" title="Power Door"><span><i class="fa fa-window-maximize" aria-hidden="true"></i></span></li>
+                        </ul>
+
+                        </div>
+                        <div class="col-lg-4 col-xl-4">
+                          <ul class="clearfix pl-0 BlackIcons">
+                            <li  data-toggle="tooltip" data-placement="top" title="Terminal Pickup"><span><i class="fa fa-plane" aria-hidden="true"></i></span></li>
+                            <li  data-toggle="tooltip" data-placement="top" title="Shuttle Bus To Car"><span><i class="fa fa-bus" aria-hidden="true"></i></span></li>
+                          </ul>
+                        </div>
+                      </div>
+                       
+                    </div>
+                    <div class="col-lg-3 col-xl-3">
+                        <p class="mb-0"><span>$77</span><small>/day</small></p>
+                        <h6>Fullsize</h6>
+                        <input class="btn color-Main" type="button" name="" value="Select">
+                    </div>
+               </div>
+                </a>  
+             </div>
+                    <div class="ResultDivs">
+                <a href="#" title="">
+                   <div class="row">
+                    <div class="col-lg-3 col-xl-3">
+                      <img class="img-fluid" src="img/Porsche-Cayenne-Turbo-S.png" alt="">
+                      <p>Audi S8</p>
+                    </div>
+                    <div class="col-lg-6 col-xl-6">
+                      <div class="row">
+                        <div class="col-lg-8 col-xl-8">
+                        <ul class="clearfix pl-0 mb-0 BigIcons">
+                          <li  data-toggle="tooltip" data-placement="top" title="male"><span><i class="fa fa-male" aria-hidden="true"></i></span><strong>x 5</strong></li>
+                          <li  data-toggle="tooltip" data-placement="top" title="bed"><span><i class="fa fa-car" aria-hidden="true"></i></span><strong>x 3</strong></li>
+                          <li  data-toggle="tooltip" data-placement="top" title="shower"><span><i class="fa fa-briefcase" aria-hidden="true"></i></span><strong>x 1</strong></li>
+                          <li  data-toggle="tooltip" data-placement="top" title="shower"><span><i class="fa fa-audio-description" aria-hidden="true"></i></span><strong>manual</strong></li>
+                          <li  data-toggle="tooltip" data-placement="top" title="shower"><span><i class="fa fa-tachometer" aria-hidden="true"></i></span><strong></strong></li>
+                        </ul>
+                        <ul class="clearfix pl-0 SmallIcons">
+                          <li  data-toggle="tooltip" data-placement="top" title="Climate Control"><span><i class="fa fa-thermometer-full" aria-hidden="true"></i></span></li>
+                          <li  data-toggle="tooltip" data-placement="top" title="Satellite Navigtion"><span><i class="fa fa-television" aria-hidden="true"></i></span></li>
+                          <li  data-toggle="tooltip" data-placement="top" title="Power Door Locks"><span><i class="fa fa-lock" aria-hidden="true"></i></span></li>
+                          <li  data-toggle="tooltip" data-placement="top" title="FM Radio"><span><i class="fa fa-music" aria-hidden="true"></i></span></li>
+                          <li  data-toggle="tooltip" data-placement="top" title="Tilt Steerng Wheel"><span><i class="fa fa-crosshairs" aria-hidden="true"></i></span></li>
+                          <li  data-toggle="tooltip" data-placement="top" title="Power Door"><span><i class="fa fa-window-maximize" aria-hidden="true"></i></span></li>
+                        </ul>
+
+                        </div>
+                        <div class="col-lg-4 col-xl-4">
+                          <ul class="clearfix pl-0 BlackIcons">
+                            <li  data-toggle="tooltip" data-placement="top" title="Terminal Pickup"><span><i class="fa fa-plane" aria-hidden="true"></i></span></li>
+                            <li  data-toggle="tooltip" data-placement="top" title="Shuttle Bus To Car"><span><i class="fa fa-bus" aria-hidden="true"></i></span></li>
+                          </ul>
+                        </div>
+                      </div>
+                       
+                    </div>
+                    <div class="col-lg-3 col-xl-3">
+                        <p class="mb-0"><span>$65</span><small>/day</small></p>
+                        <h6>Fullsize</h6>
+                        <input class="btn color-Main" type="button" name="" value="Select">
+                    </div>
+               </div>
+                </a>  
+             </div>
+                    <div class="ResultDivs">
+                <a href="#" title="">
+                   <div class="row">
+                    <div class="col-lg-3 col-xl-3">
+                      <img class="img-fluid" src="img/Honda-Civic.png" alt="">
+                      <p>Audi S8</p>
+                    </div>
+                    <div class="col-lg-6 col-xl-6">
+                      <div class="row">
+                        <div class="col-lg-8 col-xl-8">
+                        <ul class="clearfix pl-0 mb-0 BigIcons">
+                          <li  data-toggle="tooltip" data-placement="top" title="male"><span><i class="fa fa-male" aria-hidden="true"></i></span><strong>x 5</strong></li>
+                          <li  data-toggle="tooltip" data-placement="top" title="bed"><span><i class="fa fa-car" aria-hidden="true"></i></span><strong>x 3</strong></li>
+                          <li  data-toggle="tooltip" data-placement="top" title="shower"><span><i class="fa fa-briefcase" aria-hidden="true"></i></span><strong>x 1</strong></li>
+                          <li  data-toggle="tooltip" data-placement="top" title="shower"><span><i class="fa fa-audio-description" aria-hidden="true"></i></span><strong>manual</strong></li>
+                          <li  data-toggle="tooltip" data-placement="top" title="shower"><span><i class="fa fa-tachometer" aria-hidden="true"></i></span><strong></strong></li>
+                        </ul>
+                        <ul class="clearfix pl-0 SmallIcons">
+                          <li  data-toggle="tooltip" data-placement="top" title="Climate Control"><span><i class="fa fa-thermometer-full" aria-hidden="true"></i></span></li>
+                          <li  data-toggle="tooltip" data-placement="top" title="Satellite Navigtion"><span><i class="fa fa-television" aria-hidden="true"></i></span></li>
+                          <li  data-toggle="tooltip" data-placement="top" title="Power Door Locks"><span><i class="fa fa-lock" aria-hidden="true"></i></span></li>
+                          <li  data-toggle="tooltip" data-placement="top" title="FM Radio"><span><i class="fa fa-music" aria-hidden="true"></i></span></li>
+                          <li  data-toggle="tooltip" data-placement="top" title="Tilt Steerng Wheel"><span><i class="fa fa-crosshairs" aria-hidden="true"></i></span></li>
+                          <li  data-toggle="tooltip" data-placement="top" title="Power Door"><span><i class="fa fa-window-maximize" aria-hidden="true"></i></span></li>
+                        </ul>
+
+                        </div>
+                        <div class="col-lg-4 col-xl-4">
+                          <ul class="clearfix pl-0 BlackIcons">
+                            <li  data-toggle="tooltip" data-placement="top" title="Terminal Pickup"><span><i class="fa fa-plane" aria-hidden="true"></i></span></li>
+                            <li  data-toggle="tooltip" data-placement="top" title="Shuttle Bus To Car"><span><i class="fa fa-bus" aria-hidden="true"></i></span></li>
+                          </ul>
+                        </div>
+                      </div>
+                       
+                    </div>
+                    <div class="col-lg-3 col-xl-3">
+                        <p class="mb-0"><span>$99</span><small>/day</small></p>
+                        <h6>Fullsize</h6>
+                        <input class="btn color-Main" type="button" name="" value="Select">
+                    </div>
+               </div>
+                </a>  
+             </div>
+                    <div class="ResultDivs">
+                <a href="#" title="">
+                   <div class="row">
+                    <div class="col-lg-3 col-xl-3">
+                      <img class="img-fluid" src="img/Audi-S8.png" alt="">
+                      <p>Audi S8</p>
+                    </div>
+                    <div class="col-lg-6 col-xl-6">
+                      <div class="row">
+                        <div class="col-lg-8 col-xl-8">
+                        <ul class="clearfix pl-0 mb-0 BigIcons">
+                          <li  data-toggle="tooltip" data-placement="top" title="male"><span><i class="fa fa-male" aria-hidden="true"></i></span><strong>x 5</strong></li>
+                          <li  data-toggle="tooltip" data-placement="top" title="bed"><span><i class="fa fa-car" aria-hidden="true"></i></span><strong>x 3</strong></li>
+                          <li  data-toggle="tooltip" data-placement="top" title="shower"><span><i class="fa fa-briefcase" aria-hidden="true"></i></span><strong>x 1</strong></li>
+                          <li  data-toggle="tooltip" data-placement="top" title="shower"><span><i class="fa fa-audio-description" aria-hidden="true"></i></span><strong>manual</strong></li>
+                          <li  data-toggle="tooltip" data-placement="top" title="shower"><span><i class="fa fa-tachometer" aria-hidden="true"></i></span><strong></strong></li>
+                        </ul>
+                        <ul class="clearfix pl-0 SmallIcons">
+                          <li  data-toggle="tooltip" data-placement="top" title="Climate Control"><span><i class="fa fa-thermometer-full" aria-hidden="true"></i></span></li>
+                          <li  data-toggle="tooltip" data-placement="top" title="Satellite Navigtion"><span><i class="fa fa-television" aria-hidden="true"></i></span></li>
+                          <li  data-toggle="tooltip" data-placement="top" title="Power Door Locks"><span><i class="fa fa-lock" aria-hidden="true"></i></span></li>
+                          <li  data-toggle="tooltip" data-placement="top" title="FM Radio"><span><i class="fa fa-music" aria-hidden="true"></i></span></li>
+                          <li  data-toggle="tooltip" data-placement="top" title="Tilt Steerng Wheel"><span><i class="fa fa-crosshairs" aria-hidden="true"></i></span></li>
+                          <li  data-toggle="tooltip" data-placement="top" title="Power Door"><span><i class="fa fa-window-maximize" aria-hidden="true"></i></span></li>
+                        </ul>
+
+                        </div>
+                        <div class="col-lg-4 col-xl-4">
+                          <ul class="clearfix pl-0 BlackIcons">
+                            <li  data-toggle="tooltip" data-placement="top" title="Terminal Pickup"><span><i class="fa fa-plane" aria-hidden="true"></i></span></li>
+                            <li  data-toggle="tooltip" data-placement="top" title="Shuttle Bus To Car"><span><i class="fa fa-bus" aria-hidden="true"></i></span></li>
+                          </ul>
+                        </div>
+                      </div>
+                       
+                    </div>
+                    <div class="col-lg-3 col-xl-3">
+                        <p class="mb-0"><span>$345</span><small>/day</small></p>
+                        <h6>Fullsize</h6>
+                        <input class="btn color-Main" type="button" name="" value="Select">
+                    </div>
+               </div>
+                </a>  
+             </div>
+                    <div class="ResultDivs">
+                <a href="#" title="">
+                   <div class="row">
+                    <div class="col-lg-3 col-xl-3">
+                      <img class="img-fluid" src="img/BMW-X6-facelift.png" alt="">
+                      <p>Audi S8</p>
+                    </div>
+                    <div class="col-lg-6 col-xl-6">
+                      <div class="row">
+                        <div class="col-lg-8 col-xl-8">
+                        <ul class="clearfix pl-0 mb-0 BigIcons">
+                          <li  data-toggle="tooltip" data-placement="top" title="male"><span><i class="fa fa-male" aria-hidden="true"></i></span><strong>x 5</strong></li>
+                          <li  data-toggle="tooltip" data-placement="top" title="bed"><span><i class="fa fa-car" aria-hidden="true"></i></span><strong>x 3</strong></li>
+                          <li  data-toggle="tooltip" data-placement="top" title="shower"><span><i class="fa fa-briefcase" aria-hidden="true"></i></span><strong>x 1</strong></li>
+                          <li  data-toggle="tooltip" data-placement="top" title="shower"><span><i class="fa fa-audio-description" aria-hidden="true"></i></span><strong>manual</strong></li>
+                          <li  data-toggle="tooltip" data-placement="top" title="shower"><span><i class="fa fa-tachometer" aria-hidden="true"></i></span><strong></strong></li>
+                        </ul>
+                        <ul class="clearfix pl-0 SmallIcons">
+                          <li  data-toggle="tooltip" data-placement="top" title="Climate Control"><span><i class="fa fa-thermometer-full" aria-hidden="true"></i></span></li>
+                          <li  data-toggle="tooltip" data-placement="top" title="Satellite Navigtion"><span><i class="fa fa-television" aria-hidden="true"></i></span></li>
+                          <li  data-toggle="tooltip" data-placement="top" title="Power Door Locks"><span><i class="fa fa-lock" aria-hidden="true"></i></span></li>
+                          <li  data-toggle="tooltip" data-placement="top" title="FM Radio"><span><i class="fa fa-music" aria-hidden="true"></i></span></li>
+                          <li  data-toggle="tooltip" data-placement="top" title="Tilt Steerng Wheel"><span><i class="fa fa-crosshairs" aria-hidden="true"></i></span></li>
+                          <li  data-toggle="tooltip" data-placement="top" title="Power Door"><span><i class="fa fa-window-maximize" aria-hidden="true"></i></span></li>
+                        </ul>
+
+                        </div>
+                        <div class="col-lg-4 col-xl-4">
+                          <ul class="clearfix pl-0 BlackIcons">
+                            <li  data-toggle="tooltip" data-placement="top" title="Terminal Pickup"><span><i class="fa fa-plane" aria-hidden="true"></i></span></li>
+                            <li  data-toggle="tooltip" data-placement="top" title="Shuttle Bus To Car"><span><i class="fa fa-bus" aria-hidden="true"></i></span></li>
+                          </ul>
+                        </div>
+                      </div>
+                       
+                    </div>
+                    <div class="col-lg-3 col-xl-3">
+                        <p class="mb-0"><span>$125</span><small>/day</small></p>
+                        <h6>Fullsize</h6>
+                        <input class="btn color-Main" type="button" name="" value="Select">
+                    </div>
+               </div>
+                </a>  
+             </div>
+              <div class="Pagination">
+               <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                   <p>
+                     <span>Not what you're looking for?</span>
+                     <a class=" TrySearchCars color-Main-cl" href="#">Try your search again</a>
+                   </p>
+                 </div>
+                 <div class="col-sm-12 col-md-12 col-lg-7 col-xl-7">
+                   <ul class="pl-0 clearfix">
+                     <li class="active">
+                       <a class="color-Main-cl" href="#">1</a>
+                     </li>
+                     <li>
+                       <a class="color-Main-cl" href="#">2</a>
+                     </li>
+                     <li>
+                       <a class="color-Main-cl" href="#">3</a>
+                     </li>
+                     <li>
+                       <a class="color-Main-cl" href="#">4</a>
+                     </li>
+                     <li>
+                       <a class="color-Main-cl" href="#">5</a>
+                     </li>
+                     <li>
+                       <a class="color-Main-cl" href="#">6</a>
+                     </li>
+                     <li>
+                       <a class="color-Main-cl" href="#">7</a>
+                     </li>
+                     <li class="dotted">
+                      ...
+                     </li>
+                     <li>
+                       <a class="color-Main-cl" href="#">43</a>
+                     </li>
+                     <li class="Next">
+                       <a class="color-Main-cl" href="#">Next Page</a>
+                     </li>
+
+                   </ul>
+                 </div>
+                 
+               </div>
+             </div>
+        </div>
         </div>
       </div>
+    </section>
+     <section id = "ChangeSearchCars">
+        <div class="container d-flex align-items-center justify-content-center">
+          <div class="row">
+            <div class="col-lg-10 offset-lg-1 col-xl-10 offset-xl-1 ">
+              <div class="ChangeSearchInto">
+                <i class="CloseClick">x</i>
+                <h3>Search for Activity</h3>
+                 <form style="width:100%;">
+                   <div class="row">
+                  <div class="Location col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                        <div class="form-group">
+                         <label for="Where">Pick-Up From</label>
+                          <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                            <div class="input-group-addon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                            <input type="text" class="form-control autocomplete" id="SearchChangeCarsPickUp" value="USA, New York">
+                          </div>
+                      </div>
+                 </div>
+                  <div class="Location col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                        <div class="form-group">
+                         <label for="Where">Drop-Off To</label>
+                          <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                            <div class="input-group-addon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                            <input type="text" class="form-control autocomplete" id="SearchChangeCarsDropOff" value="USA, New York">
+                          </div>
+                      </div>
+                 </div>
+                    <div class="CheckIn col-sm-12 col-md-12 col-lg-3 col-xl-3">
+                     <div class="form-group">
+                         <label for="CheckIn">Pick-Up Date</label>
+                          <div class="input-group mb-2 mr-sm-2 mb-sm-0 WithOutIcon">
+                          
+                            <input type="text" class="datepicker CheckIn form-control" id="CheckIn" value="">
+                          </div>
+                      </div>
+                     
+                 </div>
+                <div class="CheckInTime col-sm-12 col-md-12 col-lg-3 col-xl-3">
+                     <div class="form-group">
+                         <label for="CheckIn">Pick-Up Time</label>
+                          <div class="input-group mb-2 mr-sm-2 mb-sm-0 WithOutIcon">
+                            
+                            <input type="text" class="CheckTime form-control" id="CheckIn" value="12:00 AM">
+                           
+                          </div>
+                           <div class = "InTime">
+                              <div class="row">
+                                <div class="Hour col-lg-4">
+                                  <i class="fa fa-angle-up HT"></i>
+                                  <p>12</p>
+                                  <i class="fa fa-angle-down HB"></i>
+                                </div>
+                                <div class="Minute col-lg-4">
+                                  <i class="fa fa-angle-up MT"></i>
+                                  <p>00</p>
+                                  <i class="fa fa-angle-down MB"></i>
+                                </div>
+                                <div class="AmPm col-lg-4">
+                                  <i class="fa fa-angle-up APT"></i>
+                                  <p>AM</p>
+                                  <i class="fa fa-angle-down APB"></i>
+                                </div>
+                              </div>
+                            </div>
+                      </div>
+                     
+                 </div>
+                 <div class="CheckOut col-sm-12 col-md-12 col-lg-3 col-xl-3">
+                     <div class="form-group">
+                         <label  for="CheckOut">Drop-off Date</label>
+                          <div class="input-group mb-2 mr-sm-2 mb-sm-0 WithOutIcon">
+                
+                            <input type="text" class="datepicker CheckOut form-control" id="CheckOut" value="">
+                          </div>
+                      </div>
+                     
+                 </div>
+                <div class="CheckInTime col-sm-12 col-md-12 col-lg-3 col-xl-3">
+                     <div class="form-group">
+                         <label for="CheckIn">Drop-off Time</label>
+                          <div class="input-group mb-2 mr-sm-2 mb-sm-0 WithOutIcon">
+                            
+                            <input type="text" class="CheckTime form-control" id="CheckIn" value="12:00 AM">
+                           
+                          </div>
+                           <div class = "InTime">
+                              <div class="row">
+                                <div class="Hour col-lg-4">
+                                  <i class="fa fa-angle-up HT"></i>
+                                  <p>12</p>
+                                  <i class="fa fa-angle-down HB"></i>
+                                </div>
+                                <div class="Minute col-lg-4">
+                                  <i class="fa fa-angle-up MT"></i>
+                                  <p>00</p>
+                                  <i class="fa fa-angle-down MB"></i>
+                                </div>
+                                <div class="AmPm col-lg-4">
+                                  <i class="fa fa-angle-up APT"></i>
+                                  <p>AM</p>
+                                  <i class="fa fa-angle-down APB"></i>
+                                </div>
+                              </div>
+                            </div>
+                      </div>
+                     
+                 </div>
+               
+                <input class="btn color-Main" type="submit" name="" value="Update Search">
+
+                
+
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
     </section>
    <!-- Footer Start -->
  <section id="footer">
@@ -730,6 +1443,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
     <script src="js/ion.rangeSlider.js"></script>
     <script src="js/bootstrap-datepicker.js" type="text/javascript" charset="utf-8" async defer></script>
+    <script src="https://maps.googleapis.com/maps/api/js?libraries=places"></script>
     <script src="js/script.js" type="text/javascript" charset="utf-8" async defer></script>
 
 </body>

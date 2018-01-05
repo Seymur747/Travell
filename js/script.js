@@ -82,9 +82,9 @@ $(document).ready(function(){
 
 $(document).ready(function(){
 {
-     $("header .NavBar .container .row .col-lg-12 .collapse .navbar-nav .nav-item .nav-link").hover(function(){
+     $("header .NavBar .container .row .col-lg-12 .collapse .navbar-nav .nav-item").hover(function(){
         if($(window).width()>=992){
-            $(this).next().addClass("Drop")
+            $(this).children('ul').addClass("Drop")
             $("header .NavBar .container .row .col-lg-12 .collapse .navbar-nav .nav-item .Drop").slideDown("fast")
         }
         
@@ -92,10 +92,10 @@ $(document).ready(function(){
         
        
     });
-      $("header .NavBar .container .row .col-lg-12 .collapse .navbar-nav .nav-item .nav-link").mouseleave(function(){
+      $("header .NavBar .container .row .col-lg-12 .collapse .navbar-nav .nav-item").mouseleave(function(){
           if($(window).width()>=992){
             $("header .NavBar .container .row .col-lg-12 .collapse .navbar-nav .nav-item .Drop").slideUp("fast")
-            $(this).next().removeClass('Drop')
+            $(this).children('ul').removeClass('Drop')
          }
         
 
@@ -183,7 +183,7 @@ $(window).resize(function(){
        
          $("#PopUp .container-fluid .row .col-lg-12 img").attr('src',CurrentImg)
         $("#PopUp").fadeIn(100,'swing', function() {
-              $("#PopUp .container-fluid .row .col-lg-12").css({'opacity' : '1'})
+              $("#PopUp .container-fluid .row .col-lg-12").css({'opacity' : '1','transform' : 'scale(1,1)'})
         });
       
        
@@ -213,13 +213,12 @@ $(window).resize(function(){
     });
     //Close Click
     $("#PopUp .container-fluid .CloseClick").click(function () {
-        $("#PopUp").fadeOut(500,'swing',function(){
-            $("#PopUp .container-fluid .row .col-lg-12").css({'opacity' : '0'}) 
-        }); 
-       
+        $("#PopUp").fadeOut(300,'swing'); 
+       $("#PopUp .container-fluid .row .col-lg-12").css({'opacity' : '0' ,'transform' : 'scale(2,2)'}) 
         
 
     });
+  
   
 
 //PopUpEND
@@ -379,7 +378,6 @@ jQuery(document).ready(function($) {
     var nd = new Date(newdate);
     
    
-    console.log(nd)
     $("input.CheckIn").attr('value',monthNames[fullDate.getUTCMonth()] +' ' + fullDate.getDate() + ', '+ weekdays[fullDate.getUTCDay()-1])
     $("input.CheckIn").attr('placeholder',monthNames[fullDate.getUTCMonth()] +' ' + fullDate.getDate() + ', '+ weekdays[fullDate.getUTCDay()-1])
     $("input.CheckOut").attr('value',monthNames[nd.getUTCMonth()] +' ' + nd.getDate() + ', '+weekdays[nd.getUTCDay()-1])
@@ -419,7 +417,7 @@ $(".Rooms .form-group .RoomsBtnGroup .Rooms5").click(function () {
 
 //CheckBox
 $('.CarDetailLeft .CheckBox .i-checker ins').click(function () {
-   console.log($(this).parent())
+
     if($(this).parent().hasClass('checked color-Main')){
           $(this).parent().removeClass('checked color-Main')
            $(this).parent().css('border', '1px solid #ccc');
@@ -468,7 +466,7 @@ $('.FilterInto .Checkbox .i-checker ins').click(function () {
 //SortRanking
 var SortCount = 0
  $(".SortRanking span").click(function () {
-    console.log('1')
+   
     if(SortCount == 0){
         
          $(".SortRanking .SortTriangle").show(100)
@@ -489,15 +487,30 @@ var SortCount = 0
 //SortRanking END
 
 //TrySearch
-$(".TrySearch").click(function (e) {
+//Activities
+$(".TrySearchActivities").click(function (e) {
     e.preventDefault();
-    $('#ChangeSearch').fadeIn(500)
+    $('#ChangeSearchaActivities').fadeIn(500)
 });
-$('#ChangeSearch .CloseClick').click(function () {
-    $('#ChangeSearch').fadeOut(500)
+$('#ChangeSearchaActivities .CloseClick').click(function () {
+    $('#ChangeSearchaActivities').fadeOut(500)
 });
-
-
+//Cars
+$(".TrySearchCars").click(function (e) {
+    e.preventDefault();
+    $('#ChangeSearchCars').fadeIn(500)
+});
+$('#ChangeSearchCars .CloseClick').click(function () {
+    $('#ChangeSearchCars').fadeOut(500)
+});
+//Rentals
+$(".TrySearchRental").click(function (e) {
+    e.preventDefault();
+    $('#ChangeSearchRental').fadeIn(500)
+});
+$('#ChangeSearchRental .CloseClick').click(function () {
+    $('#ChangeSearchRental').fadeOut(500)
+});
 //TrySearch
 //Range
   $(function () {
@@ -517,3 +530,20 @@ $('#ChangeSearch .CloseClick').click(function () {
 
     });
 //Range END
+//Get Location
+function initialize() {
+
+    var acInputs = document.getElementsByClassName("autocomplete");
+
+    for (var i = 0; i < acInputs.length; i++) {
+
+        var autocomplete = new google.maps.places.Autocomplete(acInputs[i]);
+        autocomplete.inputId = acInputs[i].id;
+
+        google.maps.event.addListener(autocomplete, 'place_changed');
+    }
+}
+initialize()
+
+
+//Get Location End
